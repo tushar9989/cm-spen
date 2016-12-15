@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Tushar\AndroidstudioProjects\EventInjector\CMSPen\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="27c24d26e4c5d57976e6926367985548678e913c">
+        <dex dex="C:\Users\Tushar\AndroidstudioProjects\EventInjector\CMSPen\build\intermediates\pre-dexed\debug\android-support-v4-a7bb4f9df10aafa435eabd5f94ea9dca4b26092d.jar" />
+    </item>
+
+</items>

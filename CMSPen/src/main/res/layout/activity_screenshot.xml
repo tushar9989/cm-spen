@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context="com.tushar.cmspen2.ScreenshotActivity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/image_container">
+
+        <ImageView
+            android:id="@+id/ss_img_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/crop_controls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/crop_save"
+                android:background="@drawable/selector_with_transparency"
+                android:padding="3.0dip"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_action_save"/>
+            <ImageView
+                android:id="@+id/crop_discard"
+                android:background="@drawable/selector_with_transparency"
+                android:padding="3.0dip"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/crop_save"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_action_discard"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_controls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/edit_save"
+                android:background="@drawable/selector_with_transparency"
+                android:padding="3.0dip"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_action_save"/>
+            <ImageView
+                android:id="@+id/edit_discard"
+                android:background="@drawable/selector_with_transparency"
+                android:padding="3.0dip"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/edit_save"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_action_discard"/>
+
+            <ImageView
+                android:id="@+id/edit_undo"
+                android:background="@drawable/selector_with_transparency"
+                android:padding="3.0dip"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_action_undo"/>
+            <ImageView
+                android:id="@+id/edit_redo"
+                android:background="@drawable/selector_with_transparency"
+                android:padding="3.0dip"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_toRightOf="@+id/edit_undo"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_action_redo"/>
+
+            <ImageView
+                android:id="@+id/edit_color"
+                android:background="@drawable/selector_with_transparency"
+                android:padding="3.0dip"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ic_action_color"/>
+            <ImageView
+                android:id="@+id/edit_erase"
+                android:background="@drawable/selector_with_transparency"
+                android:padding="3.0dip"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_action_erase"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:id="@+id/default_controls">
+
+        <ImageView
+            android:id="@+id/share"
+            android:background="@drawable/selector_with_transparency"
+            android:src="@drawable/ic_action_share"
+            android:padding="5.0dip"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/crop"
+            android:background="@drawable/selector_with_transparency"
+            android:padding="5.0dip"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_action_crop"/>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:background="@drawable/selector_with_transparency"
+            android:padding="5.0dip"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_action_edit"/>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:background="@drawable/selector_with_transparency"
+            android:padding="5.0dip"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_action_delete"/>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#557272"
+        android:gravity="right"
+        android:visibility="gone" >
+        <ImageView 
+            android:id="@+id/color" 
+            android:background="@drawable/selector_with_transparency" 
+            android:padding="7.0dip" 
+            android:focusable="true" 
+            android:layout_width="wrap_content" 
+            android:layout_height="match_parent" 
+            android:scaleType="fitCenter"/>
+        <ImageView 
+            android:id="@+id/erase" 
+            android:background="@drawable/selector_with_transparency" 
+            android:padding="7.0dip" 
+            android:focusable="true" 
+            android:layout_width="wrap_content" 
+            android:layout_height="match_parent" 
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_action_erase"/>
+    </LinearLayout>
+
+</RelativeLayout>

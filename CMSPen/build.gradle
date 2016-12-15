@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.tushar.cmspen2"
+        minSdkVersion 16
+        targetSdkVersion 22
+
+        ndk {
+            moduleName "EventInjector"
+            ldLibs "log"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/android-support-v4.jar')
+}

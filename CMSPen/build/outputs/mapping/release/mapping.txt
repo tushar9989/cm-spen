@@ -1,0 +1,862 @@
+com.android.vending.billing.IInAppBillingService -> com.a.a.a.a:
+    int isBillingSupported(int,java.lang.String,java.lang.String) -> a
+    android.os.Bundle getSkuDetails(int,java.lang.String,java.lang.String,android.os.Bundle) -> a
+    android.os.Bundle getBuyIntent(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    android.os.Bundle getPurchases(int,java.lang.String,java.lang.String,java.lang.String) -> a
+    int consumePurchase(int,java.lang.String,java.lang.String) -> b
+com.android.vending.billing.IInAppBillingService$Stub -> com.a.a.a.b:
+    47:54:com.android.vending.billing.IInAppBillingService asInterface(android.os.IBinder) -> a
+    62:171:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.android.vending.billing.IInAppBillingService$Stub$Proxy -> com.a.a.a.c:
+    android.os.IBinder mRemote -> a
+    177:179:void <init>(android.os.IBinder) -> <init>
+    182:182:android.os.IBinder asBinder() -> asBinder
+    199:215:int isBillingSupported(int,java.lang.String,java.lang.String) -> a
+    235:263:android.os.Bundle getSkuDetails(int,java.lang.String,java.lang.String,android.os.Bundle) -> a
+    297:320:android.os.Bundle getBuyIntent(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    348:370:android.os.Bundle getPurchases(int,java.lang.String,java.lang.String,java.lang.String) -> a
+    383:399:int consumePurchase(int,java.lang.String,java.lang.String) -> b
+com.tushar.cmspen2.BootReceiver -> com.tushar.cmspen2.BootReceiver:
+    11:11:void <init>() -> <init>
+    15:116:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.tushar.cmspen2.BootReceiver$1 -> com.tushar.cmspen2.a:
+    android.content.Intent val$i -> a
+    com.tushar.cmspen2.BootReceiver this$0 -> b
+    21:21:void <init>(com.tushar.cmspen2.BootReceiver,android.content.Intent) -> <init>
+    24:27:void run() -> run
+com.tushar.cmspen2.BootReceiver$2 -> com.tushar.cmspen2.b:
+    android.content.Context val$ctx -> a
+    com.tushar.cmspen2.BootReceiver this$0 -> b
+    34:34:void <init>(com.tushar.cmspen2.BootReceiver,android.content.Context) -> <init>
+    37:38:void run() -> run
+com.tushar.cmspen2.BootReceiver$3 -> com.tushar.cmspen2.c:
+    android.content.Intent val$i -> a
+    android.content.Context val$ctx -> b
+    com.tushar.cmspen2.BootReceiver this$0 -> c
+    44:44:void <init>(com.tushar.cmspen2.BootReceiver,android.content.Intent,android.content.Context) -> <init>
+    47:50:void run() -> run
+com.tushar.cmspen2.BootReceiver$4 -> com.tushar.cmspen2.d:
+    android.content.SharedPreferences val$pref -> a
+    android.content.Context val$ctx -> b
+    android.content.Intent val$i -> c
+    com.tushar.cmspen2.BootReceiver this$0 -> d
+    56:56:void <init>(com.tushar.cmspen2.BootReceiver,android.content.SharedPreferences,android.content.Context,android.content.Intent) -> <init>
+    59:104:void run() -> run
+com.tushar.cmspen2.ColorPickerView -> com.tushar.cmspen2.e:
+    android.graphics.Paint mPaint -> a
+    float mCurrentHue -> b
+    int mCurrentX -> c
+    int mCurrentY -> d
+    int mCurrentColor -> e
+    int[] mHueBarColors -> f
+    int[] mMainColors -> g
+    com.tushar.cmspen2.ColorPickerView$OnColorChangedListener mListener -> h
+    int mWidth -> i
+    int margin -> j
+    float hueSpacing -> k
+    float yHueSpacing -> l
+    int selectorHeight -> m
+    int mainHeight -> n
+    int touchRegionID -> o
+    float sliderX -> p
+    float sliderWidth -> q
+    float sliderHeight -> r
+    float sliderSpacing -> s
+    android.graphics.Paint sliderPaint -> t
+    int sliderOffset -> u
+    14:101:void <init>(android.content.Context,com.tushar.cmspen2.ColorPickerView$OnColorChangedListener,int,int,int) -> <init>
+    105:137:int getCurrentMainColor() -> a
+    142:161:void updateMainColors() -> b
+    165:219:void onDraw(android.graphics.Canvas) -> onDraw
+    223:233:void initialize() -> c
+    237:239:void onSizeChanged(int,int,int,int) -> onSizeChanged
+    243:362:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+com.tushar.cmspen2.ColorPickerView$OnColorChangedListener -> com.tushar.cmspen2.f:
+    void colorChanged(int,int) -> a
+com.tushar.cmspen2.CropView -> com.tushar.cmspen2.g:
+    android.graphics.Point[] corners -> a
+    android.content.Context mContext -> b
+    android.graphics.Paint mPaint -> c
+    android.graphics.Path mPath -> d
+    int cID -> e
+    int CORNER_TOLERANCE -> f
+    int REDRAW_TOLERANCE -> g
+    int ANCHOR_BORDER -> h
+    int ANCHOR_INNER -> i
+    int ANCHOR_LINE_WIDTH -> j
+    int ANCHOR_ARROW_HEIGHT -> k
+    int ANCHOR_ARROW_WIDTH -> l
+    int CIRCLE_INNER -> m
+    int mWidth -> n
+    int mHeight -> o
+    int minWidth -> p
+    int minHeight -> q
+    android.graphics.DashPathEffect dotted -> r
+    24:43:void <init>(android.content.Context) -> <init>
+    59:61:void onSizeChanged(int,int,int,int) -> onSizeChanged
+    65:99:void init() -> a
+    103:171:void onDraw(android.graphics.Canvas) -> onDraw
+    175:264:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.tushar.cmspen2.DrawView -> com.tushar.cmspen2.h:
+    android.graphics.Path mPath -> e
+    android.graphics.Paint mPaint -> f
+    java.util.ArrayList paths -> g
+    java.util.ArrayList colors -> h
+    java.util.ArrayList erased -> i
+    java.util.ArrayList widths -> j
+    java.util.ArrayList undonePaths -> k
+    java.util.ArrayList undoneColors -> l
+    java.util.ArrayList undoneErased -> m
+    java.util.ArrayList undoneWidths -> n
+    int chosenColor -> o
+    int drawWidth -> p
+    int eraseWidth -> q
+    boolean ERASE_MODE -> r
+    android.graphics.Paint erasePaint -> s
+    android.graphics.Paint eraseHover -> t
+    float hX -> u
+    float hY -> v
+    boolean hoverTimeout -> w
+    long lastEventTime -> x
+    boolean checking -> y
+    android.graphics.Bitmap hoverPen -> z
+    int[] drawWidthMap -> a
+    int drawWidthOffset -> A
+    int[] eraseWidthMap -> b
+    int eraseWidthOffset -> B
+    float scale -> C
+    boolean edit_hover_enable -> D
+    float mX -> E
+    float mY -> F
+    boolean buttonPressed -> c
+    boolean handlingButton -> d
+    23:337:void <init>(android.content.Context) -> <init>
+    68:70:void setScale(float) -> a
+    74:110:void initialize() -> a
+    114:117:void setColor(int) -> a
+    121:121:int getChosenColor() -> b
+    126:127:void eraserMode() -> c
+    131:134:void setWidth(int) -> b
+    138:138:int getDrawWidthOffset() -> d
+    143:146:void setEraserWidth(int) -> c
+    150:150:int getEraseWidthOffset() -> e
+    155:164:void clearScreen() -> f
+    168:169:void onSizeChanged(int,int,int,int) -> onSizeChanged
+    174:208:void onDraw(android.graphics.Canvas) -> onDraw
+    215:231:void touch_start(float,float) -> a
+    233:241:void touch_move(float,float) -> b
+    243:245:void touch_up() -> i
+    248:256:void onClickUndo() -> g
+    259:267:void onClickRedo() -> h
+    271:289:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    294:315:void onAttachedToWindow() -> onAttachedToWindow
+    319:328:void onDetachedFromWindow() -> onDetachedFromWindow
+    332:335:void onVisibilityChanged(android.view.View,int) -> onVisibilityChanged
+    341:371:boolean onHover(android.view.View,android.view.MotionEvent) -> onHover
+    20:20:boolean access$000(com.tushar.cmspen2.DrawView) -> a
+    20:20:long access$100(com.tushar.cmspen2.DrawView) -> b
+    20:20:boolean access$200(com.tushar.cmspen2.DrawView) -> c
+    41:338:void <clinit>() -> <clinit>
+com.tushar.cmspen2.DrawView$1 -> com.tushar.cmspen2.i:
+    com.tushar.cmspen2.DrawView this$0 -> a
+    295:295:void <init>(com.tushar.cmspen2.DrawView) -> <init>
+    298:312:void run() -> run
+com.tushar.cmspen2.EraserView -> com.tushar.cmspen2.j:
+    float sliderX -> b
+    float sliderWidth -> c
+    float sliderHeight -> d
+    float sliderSpacing -> e
+    android.graphics.Paint sliderPaint -> f
+    int sliderOffset -> g
+    com.tushar.cmspen2.EraserView$OnWidthChangedListener mListener -> h
+    int margin -> a
+    int mWidth -> i
+    int touchRegionID -> j
+    22:34:void <init>(android.content.Context,int,int,com.tushar.cmspen2.EraserView$OnWidthChangedListener) -> <init>
+    46:48:void onSizeChanged(int,int,int,int) -> onSizeChanged
+    51:63:void init() -> a
+    67:82:void onDraw(android.graphics.Canvas) -> onDraw
+    87:143:boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.tushar.cmspen2.EraserView$OnWidthChangedListener -> com.tushar.cmspen2.k:
+    void widthChanged(int) -> a
+com.tushar.cmspen2.Exec -> com.tushar.cmspen2.Exec:
+    java.io.FileDescriptor createSubprocess(java.lang.String,java.lang.String[],java.lang.String[],int[]) -> createSubprocess
+    int waitFor(int) -> waitFor
+    void close(java.io.FileDescriptor) -> close
+    void hangupProcessGroup(int) -> hangupProcessGroup
+    10:17:void <clinit>() -> <clinit>
+com.tushar.cmspen2.KeyboardActivity -> com.tushar.cmspen2.KeyboardActivity:
+    java.util.ArrayList list -> a
+    java.lang.String currentKB -> b
+    27:71:void <init>() -> <init>
+    34:69:void onCreate(android.os.Bundle) -> onCreate
+    117:163:void Switch(java.lang.String,java.lang.String,android.content.Context) -> a
+com.tushar.cmspen2.KeyboardActivity$1 -> com.tushar.cmspen2.l:
+    com.tushar.cmspen2.KeyboardActivity this$0 -> a
+    50:50:void <init>(com.tushar.cmspen2.KeyboardActivity) -> <init>
+    60:66:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.tushar.cmspen2.KeyboardActivity$ListAdapter -> com.tushar.cmspen2.m:
+    com.tushar.cmspen2.KeyboardActivity this$0 -> a
+    73:75:void <init>(com.tushar.cmspen2.KeyboardActivity,java.util.List) -> <init>
+    80:86:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    90:90:android.view.View newView(android.view.ViewGroup) -> a
+    95:112:void bindView(int,android.view.View) -> a
+com.tushar.cmspen2.MainActivity -> com.tushar.cmspen2.MainActivity:
+    java.lang.String path -> a
+    boolean compatible -> b
+    com.tushar.cmspen2.util.IabHelper mHelper -> c
+    boolean success -> d
+    boolean setup -> e
+    boolean done -> f
+    boolean done_check -> g
+    com.tushar.cmspen2.MainActivity$LegacyHandler h -> h
+    int displayMode -> Q
+    android.widget.RelativeLayout buy_frame -> i
+    android.widget.RelativeLayout edit_buy_frame -> j
+    android.widget.RelativeLayout keyb -> k
+    android.widget.RelativeLayout block -> l
+    android.widget.RelativeLayout soft_block -> m
+    android.widget.RelativeLayout ss -> n
+    android.widget.RelativeLayout main_button_container -> o
+    android.widget.RelativeLayout legacy_frame -> p
+    android.widget.RelativeLayout edit_hover -> q
+    android.widget.RelativeLayout button_adjustments -> r
+    android.widget.RelativeLayout orientation_fix -> s
+    android.widget.LinearLayout button_frame -> t
+    android.widget.Button buy -> u
+    android.widget.Button edit_buy -> v
+    android.widget.Button activate -> w
+    android.widget.Button keyboard_main_button -> x
+    android.widget.Button touchscreen_main_button -> y
+    android.widget.Button screenshot_main_button -> z
+    android.widget.Button bfeat_main_button -> A
+    android.widget.Button check_legacy -> B
+    android.widget.ToggleButton block_enable -> C
+    android.widget.ToggleButton soft_block_enable -> D
+    android.widget.ToggleButton ss_enable -> E
+    android.widget.ToggleButton kb_enable -> F
+    android.widget.ToggleButton startStop -> G
+    android.widget.ToggleButton edit_hover_enable -> H
+    android.widget.ToggleButton orientation_fix_enable -> I
+    android.widget.CheckBox logging -> J
+    android.widget.CheckBox intensive_mode -> K
+    android.widget.CheckBox test_features -> L
+    android.widget.SeekBar minSeekBar -> M
+    android.widget.SeekBar maxSeekBar -> N
+    android.widget.TextView minSeekDisp -> O
+    android.widget.TextView maxSeekDisp -> P
+    62:976:void <init>() -> <init>
+    88:756:void onCreate(android.os.Bundle) -> onCreate
+    760:763:void KeyboardMode() -> a
+    767:771:void TouchscreenMode() -> b
+    775:784:void ScreenshotMode() -> c
+    788:799:void ButtonMode() -> d
+    803:829:void DefaultMode() -> e
+    833:837:void onBackPressed() -> onBackPressed
+    887:898:boolean appInstalledOrNot(java.lang.String,android.content.Context) -> a
+    903:906:void onDestroy() -> onDestroy
+    908:909:void StopEventMonitor(android.content.Context) -> a
+    913:934:boolean legacyCheck(android.content.Context) -> c
+    940:950:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    953:954:void StartEventMonitor(android.content.Context) -> b
+    958:968:java.lang.String GetString(java.lang.String) -> a
+    973:974:void simKey(int) -> a
+    62:62:void access$000(com.tushar.cmspen2.MainActivity) -> a
+    62:62:void access$100(com.tushar.cmspen2.MainActivity) -> b
+    62:62:void access$200(com.tushar.cmspen2.MainActivity) -> c
+    62:62:void access$300(com.tushar.cmspen2.MainActivity) -> d
+    62:62:boolean access$400(com.tushar.cmspen2.MainActivity,android.content.Context) -> a
+com.tushar.cmspen2.MainActivity$1 -> com.tushar.cmspen2.n:
+    com.tushar.cmspen2.MainActivity this$0 -> a
+    111:111:void <init>(com.tushar.cmspen2.MainActivity) -> <init>
+    114:115:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.MainActivity$10 -> com.tushar.cmspen2.o:
+    com.tushar.cmspen2.util.IabHelper$OnIabPurchaseFinishedListener val$PurchaseListener -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    336:336:void <init>(com.tushar.cmspen2.MainActivity,com.tushar.cmspen2.util.IabHelper$OnIabPurchaseFinishedListener) -> <init>
+    341:344:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.MainActivity$11 -> com.tushar.cmspen2.p:
+    com.tushar.cmspen2.MainActivity this$0 -> a
+    349:349:void <init>(com.tushar.cmspen2.MainActivity) -> <init>
+    353:362:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.MainActivity$12 -> com.tushar.cmspen2.q:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    373:373:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    379:385:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$13 -> com.tushar.cmspen2.r:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    395:395:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    401:407:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$14 -> com.tushar.cmspen2.s:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    417:417:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    423:429:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$15 -> com.tushar.cmspen2.t:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    439:439:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    445:451:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$16 -> com.tushar.cmspen2.u:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    462:462:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    468:480:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$17 -> com.tushar.cmspen2.v:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    490:490:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    494:500:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$18 -> com.tushar.cmspen2.w:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    504:504:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    509:516:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.MainActivity$19 -> com.tushar.cmspen2.x:
+    com.tushar.cmspen2.MainActivity this$0 -> a
+    548:548:void <init>(com.tushar.cmspen2.MainActivity) -> <init>
+    550:551:void onClick(android.content.DialogInterface,int) -> onClick
+com.tushar.cmspen2.MainActivity$2 -> com.tushar.cmspen2.y:
+    com.tushar.cmspen2.MainActivity this$0 -> a
+    118:118:void <init>(com.tushar.cmspen2.MainActivity) -> <init>
+    121:122:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.MainActivity$20 -> com.tushar.cmspen2.z:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    564:564:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    567:576:void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    581:581:void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    586:586:void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+com.tushar.cmspen2.MainActivity$21 -> com.tushar.cmspen2.aa:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    596:596:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    599:609:void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    614:614:void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    619:619:void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+com.tushar.cmspen2.MainActivity$22 -> com.tushar.cmspen2.ab:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    667:667:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    671:681:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$23 -> com.tushar.cmspen2.ac:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    689:689:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    693:703:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$24 -> com.tushar.cmspen2.ad:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    711:711:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    715:725:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$25 -> com.tushar.cmspen2.ae:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    736:736:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    738:754:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+com.tushar.cmspen2.MainActivity$3 -> com.tushar.cmspen2.af:
+    com.tushar.cmspen2.MainActivity this$0 -> a
+    125:125:void <init>(com.tushar.cmspen2.MainActivity) -> <init>
+    128:129:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.MainActivity$4 -> com.tushar.cmspen2.ag:
+    com.tushar.cmspen2.MainActivity this$0 -> a
+    132:132:void <init>(com.tushar.cmspen2.MainActivity) -> <init>
+    135:136:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.MainActivity$5 -> com.tushar.cmspen2.ah:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    139:139:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    142:155:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.MainActivity$6 -> com.tushar.cmspen2.ai:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    162:162:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    164:228:void onIabSetupFinished(com.tushar.cmspen2.util.IabResult) -> a
+com.tushar.cmspen2.MainActivity$6$1 -> com.tushar.cmspen2.aj:
+    com.tushar.cmspen2.MainActivity$6 this$1 -> a
+    183:183:void <init>(com.tushar.cmspen2.MainActivity$6) -> <init>
+    188:225:void onQueryInventoryFinished(com.tushar.cmspen2.util.IabResult,com.tushar.cmspen2.util.Inventory) -> a
+com.tushar.cmspen2.MainActivity$7 -> com.tushar.cmspen2.ak:
+    com.tushar.cmspen2.MainActivity this$0 -> a
+    262:262:void <init>(com.tushar.cmspen2.MainActivity) -> <init>
+    264:288:void run() -> run
+com.tushar.cmspen2.MainActivity$8 -> com.tushar.cmspen2.al:
+    android.content.SharedPreferences val$pref -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    293:293:void <init>(com.tushar.cmspen2.MainActivity,android.content.SharedPreferences) -> <init>
+    298:321:void onIabPurchaseFinished(com.tushar.cmspen2.util.IabResult,com.tushar.cmspen2.util.Purchase) -> a
+com.tushar.cmspen2.MainActivity$9 -> com.tushar.cmspen2.am:
+    com.tushar.cmspen2.util.IabHelper$OnIabPurchaseFinishedListener val$PurchaseListener -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    323:323:void <init>(com.tushar.cmspen2.MainActivity,com.tushar.cmspen2.util.IabHelper$OnIabPurchaseFinishedListener) -> <init>
+    328:331:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.MainActivity$CheckComp -> com.tushar.cmspen2.an:
+    android.app.ProgressDialog mDialog -> a
+    com.tushar.cmspen2.MainActivity this$0 -> b
+    976:977:void <init>(com.tushar.cmspen2.MainActivity) -> <init>
+    982:988:void onPreExecute() -> onPreExecute
+    992:1019:java.lang.Boolean doInBackground(java.lang.Void[]) -> a
+    1026:1032:void onPostExecute(java.lang.Boolean) -> a
+    976:976:void onPostExecute(java.lang.Object) -> onPostExecute
+    976:976:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.tushar.cmspen2.MainActivity$LegacyHandler -> com.tushar.cmspen2.ao:
+    android.content.SharedPreferences pref -> a
+    846:850:void <init>(android.content.SharedPreferences) -> <init>
+    854:882:void handleMessage(android.os.Message) -> handleMessage
+com.tushar.cmspen2.SPenDetection -> com.tushar.cmspen2.SPenDetection:
+    android.os.Vibrator v -> a
+    java.lang.String path -> b
+    int spenFD -> c
+    int polling -> d
+    android.content.Intent i -> e
+    android.content.Intent SPen_Event -> f
+    android.os.PowerManager$WakeLock screenLock -> g
+    android.content.SharedPreferences pref -> h
+    com.tushar.cmspen2.SPenDetection$EventHandler h -> i
+    android.os.Handler pCheck -> j
+    android.os.Handler timeout -> k
+    java.lang.String touchs_path -> l
+    java.lang.String touchk_path -> m
+    int touchk_fd -> n
+    int touchs_fd -> o
+    java.lang.Object lock -> s
+    int[] Long_Min_Map -> p
+    int[] Long_Max_Map -> q
+    int Tasker_Last_Event -> t
+    android.content.Intent INTENT_REQUEST_REQUERY -> r
+    24:185:void <init>() -> <init>
+    62:62:android.os.IBinder onBind(android.content.Intent) -> onBind
+    67:69:void waitForEvent() -> waitForEvent
+    75:174:void onCreate() -> onCreate
+    437:437:int getTasker_Last_Event() -> a
+    442:443:void clearTaskerEvent() -> b
+    447:449:void touchBlockStart() -> c
+    453:455:void softBlockStart() -> d
+    459:462:void touchBlockStop() -> e
+    466:469:void softBlockStop() -> f
+    473:478:void blockStop() -> g
+    482:507:void KbHandle(int) -> a
+    511:518:void onDestroy() -> onDestroy
+    522:555:void enableBlockCompat(android.content.Context) -> a
+    559:559:int AddListener(java.lang.String) -> a
+    int BlockStart(java.lang.String) -> BlockStart
+    int BlockStop(int) -> BlockStop
+    int AddFileChangeListener(java.lang.String) -> AddFileChangeListener
+    int PollDevFD(int) -> PollDevFD
+    int openFromPath(java.lang.String) -> openFromPath
+    24:24:java.lang.Object access$000() -> h
+    24:24:int access$102(int) -> b
+    24:24:int access$200(int) -> c
+    30:578:void <clinit>() -> <clinit>
+com.tushar.cmspen2.SPenDetection$1 -> com.tushar.cmspen2.ap:
+    com.tushar.cmspen2.SPenDetection this$0 -> a
+    167:167:void <init>(com.tushar.cmspen2.SPenDetection) -> <init>
+    171:172:void run() -> run
+com.tushar.cmspen2.SPenDetection$2 -> com.tushar.cmspen2.aq:
+    int val$mode -> a
+    com.tushar.cmspen2.SPenDetection this$0 -> b
+    483:483:void <init>(com.tushar.cmspen2.SPenDetection,int) -> <init>
+    486:505:void run() -> run
+com.tushar.cmspen2.SPenDetection$EventAsync -> com.tushar.cmspen2.ar:
+    int hPressCount -> a
+    boolean running -> b
+    long lastEventTime -> c
+    int min_offset -> d
+    int max_offset -> e
+    com.tushar.cmspen2.SPenDetection this$0 -> f
+    185:191:void <init>(com.tushar.cmspen2.SPenDetection) -> <init>
+    195:419:java.lang.Void doInBackground(java.lang.Void[]) -> a
+    424:431:void onPostExecute(java.lang.Void) -> a
+    185:185:void onPostExecute(java.lang.Object) -> onPostExecute
+    185:185:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.tushar.cmspen2.SPenDetection$EventAsync$1 -> com.tushar.cmspen2.as:
+    java.lang.Boolean val$test_features -> a
+    com.tushar.cmspen2.SPenDetection$EventAsync this$1 -> b
+    300:300:void <init>(com.tushar.cmspen2.SPenDetection$EventAsync,java.lang.Boolean) -> <init>
+    304:311:void run() -> run
+com.tushar.cmspen2.SPenDetection$EventAsync$1$1 -> com.tushar.cmspen2.at:
+    com.tushar.cmspen2.SPenDetection$EventAsync$1 this$2 -> a
+    306:306:void <init>(com.tushar.cmspen2.SPenDetection$EventAsync$1) -> <init>
+    308:309:void run() -> run
+com.tushar.cmspen2.SPenDetection$EventAsync$2 -> com.tushar.cmspen2.au:
+    com.tushar.cmspen2.SPenDetection$EventAsync this$1 -> a
+    336:336:void <init>(com.tushar.cmspen2.SPenDetection$EventAsync) -> <init>
+    340:341:void run() -> run
+com.tushar.cmspen2.SPenDetection$EventAsync$3 -> com.tushar.cmspen2.av:
+    long val$pressedFor -> a
+    java.lang.Boolean val$button_features -> b
+    java.lang.Boolean val$test_features -> c
+    com.tushar.cmspen2.SPenDetection$EventAsync this$1 -> d
+    346:346:void <init>(com.tushar.cmspen2.SPenDetection$EventAsync,long,java.lang.Boolean,java.lang.Boolean) -> <init>
+    349:399:void run() -> run
+com.tushar.cmspen2.SPenDetection$EventAsync$3$1 -> com.tushar.cmspen2.aw:
+    com.tushar.cmspen2.SPenDetection$EventAsync$3 this$2 -> a
+    389:389:void <init>(com.tushar.cmspen2.SPenDetection$EventAsync$3) -> <init>
+    393:394:void run() -> run
+com.tushar.cmspen2.SPenDetection$EventAsync$4 -> com.tushar.cmspen2.ax:
+    com.tushar.cmspen2.SPenDetection$EventAsync this$1 -> a
+    424:424:void <init>(com.tushar.cmspen2.SPenDetection$EventAsync) -> <init>
+    428:429:void run() -> run
+com.tushar.cmspen2.SPenDetection$EventHandler -> com.tushar.cmspen2.ay:
+    com.tushar.cmspen2.SPenDetection this$0 -> a
+    176:176:void <init>(com.tushar.cmspen2.SPenDetection) -> <init>
+    180:182:void handleMessage(android.os.Message) -> handleMessage
+com.tushar.cmspen2.ScreenshotActivity -> com.tushar.cmspen2.ScreenshotActivity:
+    java.io.File imgFile -> a
+    com.tushar.cmspen2.CropView cropView -> b
+    com.tushar.cmspen2.DrawView drawView -> c
+    com.tushar.cmspen2.ColorPickerView pickerView -> d
+    com.tushar.cmspen2.EraserView eraserView -> e
+    android.widget.RelativeLayout default_controls -> f
+    android.widget.RelativeLayout crop_controls -> g
+    android.widget.RelativeLayout edit_controls -> h
+    android.graphics.Bitmap myBitmap -> i
+    android.widget.ImageView myImage -> j
+    int CURRENT_MODE -> k
+    android.graphics.Point size -> l
+    float scale -> m
+    52:63:void <init>() -> <init>
+    67:541:void onCreate(android.os.Bundle) -> onCreate
+    545:574:void saveChanges(boolean) -> a
+    578:586:void cropMode() -> a
+    590:598:void editMode() -> b
+    602:628:void setScaledView(android.widget.RelativeLayout,android.view.View) -> a
+    632:643:void defaultMode() -> c
+    647:769:void takeScreenshot(android.content.Context,boolean) -> a
+    52:52:void access$000(com.tushar.cmspen2.ScreenshotActivity) -> a
+    52:52:void access$100(com.tushar.cmspen2.ScreenshotActivity,boolean) -> a
+    52:52:void access$200(com.tushar.cmspen2.ScreenshotActivity) -> b
+    52:52:void access$300(com.tushar.cmspen2.ScreenshotActivity) -> c
+com.tushar.cmspen2.ScreenshotActivity$1 -> com.tushar.cmspen2.az:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    88:88:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    90:91:void onClick(android.content.DialogInterface,int) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$10 -> com.tushar.cmspen2.ba:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    397:397:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    401:443:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$10$1 -> com.tushar.cmspen2.bb:
+    android.widget.ImageView val$outOfBounds -> a
+    com.tushar.cmspen2.ScreenshotActivity$10 this$1 -> b
+    413:413:void <init>(com.tushar.cmspen2.ScreenshotActivity$10,android.widget.ImageView) -> <init>
+    416:422:void widthChanged(int) -> a
+com.tushar.cmspen2.ScreenshotActivity$10$2 -> com.tushar.cmspen2.bc:
+    android.widget.ImageView val$outOfBounds -> a
+    com.tushar.cmspen2.ScreenshotActivity$10 this$1 -> b
+    425:425:void <init>(com.tushar.cmspen2.ScreenshotActivity$10,android.widget.ImageView) -> <init>
+    428:432:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$11 -> com.tushar.cmspen2.bd:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    447:447:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    450:452:boolean onLongClick(android.view.View) -> onLongClick
+com.tushar.cmspen2.ScreenshotActivity$12 -> com.tushar.cmspen2.be:
+    android.widget.ImageView val$color -> a
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> b
+    458:458:void <init>(com.tushar.cmspen2.ScreenshotActivity,android.widget.ImageView) -> <init>
+    463:500:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$12$1 -> com.tushar.cmspen2.bf:
+    android.widget.ImageView val$outOfBounds -> a
+    com.tushar.cmspen2.ScreenshotActivity$12 this$1 -> b
+    472:472:void <init>(com.tushar.cmspen2.ScreenshotActivity$12,android.widget.ImageView) -> <init>
+    475:482:void colorChanged(int,int) -> a
+com.tushar.cmspen2.ScreenshotActivity$12$2 -> com.tushar.cmspen2.bg:
+    android.widget.ImageView val$outOfBounds -> a
+    com.tushar.cmspen2.ScreenshotActivity$12 this$1 -> b
+    485:485:void <init>(com.tushar.cmspen2.ScreenshotActivity$12,android.widget.ImageView) -> <init>
+    488:492:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$13 -> com.tushar.cmspen2.bh:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    506:506:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    510:515:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$14 -> com.tushar.cmspen2.bi:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    521:521:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    525:538:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$14$1 -> com.tushar.cmspen2.bj:
+    com.tushar.cmspen2.ScreenshotActivity$14 this$1 -> a
+    528:528:void <init>(com.tushar.cmspen2.ScreenshotActivity$14) -> <init>
+    531:534:void onClick(android.content.DialogInterface,int) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$15 -> com.tushar.cmspen2.bk:
+    int val$pid -> a
+    716:716:void <init>(int) -> <init>
+    718:719:java.lang.Void call() -> a
+    716:716:java.lang.Object call() -> call
+com.tushar.cmspen2.ScreenshotActivity$2 -> com.tushar.cmspen2.bl:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    164:164:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    168:169:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$3 -> com.tushar.cmspen2.bm:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    174:174:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    180:236:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$3$1 -> com.tushar.cmspen2.bn:
+    android.widget.CheckBox val$ask -> a
+    android.content.SharedPreferences val$pref -> b
+    com.tushar.cmspen2.ScreenshotActivity$3 this$1 -> c
+    199:199:void <init>(com.tushar.cmspen2.ScreenshotActivity$3,android.widget.CheckBox,android.content.SharedPreferences) -> <init>
+    202:210:void onClick(android.content.DialogInterface,int) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$3$2 -> com.tushar.cmspen2.bo:
+    android.widget.CheckBox val$ask -> a
+    android.content.SharedPreferences val$pref -> b
+    com.tushar.cmspen2.ScreenshotActivity$3 this$1 -> c
+    212:212:void <init>(com.tushar.cmspen2.ScreenshotActivity$3,android.widget.CheckBox,android.content.SharedPreferences) -> <init>
+    215:223:void onClick(android.content.DialogInterface,int) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$4 -> com.tushar.cmspen2.bp:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    241:241:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    245:246:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$5 -> com.tushar.cmspen2.bq:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    252:252:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    256:287:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$5$1 -> com.tushar.cmspen2.br:
+    android.widget.CheckBox val$ask -> a
+    android.content.SharedPreferences val$pref -> b
+    com.tushar.cmspen2.ScreenshotActivity$5 this$1 -> c
+    273:273:void <init>(com.tushar.cmspen2.ScreenshotActivity$5,android.widget.CheckBox,android.content.SharedPreferences) -> <init>
+    276:282:void onClick(android.content.DialogInterface,int) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$6 -> com.tushar.cmspen2.bs:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    297:297:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    301:302:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$7 -> com.tushar.cmspen2.bt:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    307:307:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    311:312:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$8 -> com.tushar.cmspen2.bu:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    317:317:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    321:322:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$9 -> com.tushar.cmspen2.bv:
+    com.tushar.cmspen2.ScreenshotActivity this$0 -> a
+    327:327:void <init>(com.tushar.cmspen2.ScreenshotActivity) -> <init>
+    331:392:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$9$1 -> com.tushar.cmspen2.bw:
+    android.widget.CheckBox val$ask -> a
+    android.content.SharedPreferences val$pref -> b
+    com.tushar.cmspen2.ScreenshotActivity$9 this$1 -> c
+    359:359:void <init>(com.tushar.cmspen2.ScreenshotActivity$9,android.widget.CheckBox,android.content.SharedPreferences) -> <init>
+    362:370:void onClick(android.content.DialogInterface,int) -> onClick
+com.tushar.cmspen2.ScreenshotActivity$9$2 -> com.tushar.cmspen2.bx:
+    android.widget.CheckBox val$ask -> a
+    android.content.SharedPreferences val$pref -> b
+    com.tushar.cmspen2.ScreenshotActivity$9 this$1 -> c
+    372:372:void <init>(com.tushar.cmspen2.ScreenshotActivity$9,android.widget.CheckBox,android.content.SharedPreferences) -> <init>
+    375:383:void onClick(android.content.DialogInterface,int) -> onClick
+com.tushar.cmspen2.TaskerEditActivity -> com.tushar.cmspen2.TaskerEditActivity:
+    14:14:void <init>() -> <init>
+    18:65:void onCreate(android.os.Bundle) -> onCreate
+com.tushar.cmspen2.TaskerEditActivity$1 -> com.tushar.cmspen2.by:
+    android.widget.RadioGroup val$list -> a
+    com.tushar.cmspen2.TaskerEditActivity this$0 -> b
+    23:23:void <init>(com.tushar.cmspen2.TaskerEditActivity,android.widget.RadioGroup) -> <init>
+    26:54:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.TaskerEditActivity$2 -> com.tushar.cmspen2.bz:
+    com.tushar.cmspen2.TaskerEditActivity this$0 -> a
+    58:58:void <init>(com.tushar.cmspen2.TaskerEditActivity) -> <init>
+    61:63:void onClick(android.view.View) -> onClick
+com.tushar.cmspen2.TaskerQueryReceiver -> com.tushar.cmspen2.TaskerQueryReceiver:
+    8:8:void <init>() -> <init>
+    13:23:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.tushar.cmspen2.libsuperuser.Debug -> com.tushar.cmspen2.libsuperuser.a:
+    boolean debug -> a
+    int logTypes -> b
+    com.tushar.cmspen2.libsuperuser.Debug$OnLogListener logListener -> c
+    boolean sanityChecks -> d
+    52:52:boolean getDebug() -> a
+    85:92:void logCommon(int,java.lang.String,java.lang.String) -> a
+    102:103:void log(java.lang.String) -> a
+    113:114:void logCommand(java.lang.String) -> b
+    124:125:void logOutput(java.lang.String) -> c
+    219:219:boolean getSanityChecksEnabled() -> b
+    230:230:boolean getSanityChecksEnabledEffective() -> c
+    240:240:boolean onMainThread() -> d
+    31:196:void <clinit>() -> <clinit>
+com.tushar.cmspen2.libsuperuser.Debug$OnLogListener -> com.tushar.cmspen2.libsuperuser.b:
+    void onLog(int,java.lang.String,java.lang.String) -> a
+com.tushar.cmspen2.libsuperuser.Events -> com.tushar.cmspen2.libsuperuser.Events:
+    java.util.ArrayList m_Devs -> a
+    8:91:void <init>() -> <init>
+    81:81:int getSuccessfulPollingType() -> a
+    84:84:int getSuccessfulPollingCode() -> b
+    87:87:int getSuccessfulPollingValue() -> c
+    108:135:int Init() -> d
+    int ScanFiles() -> ScanFiles
+    int OpenDev(int) -> OpenDev
+    java.lang.String getDevPath(int) -> getDevPath
+    java.lang.String getDevName(int) -> getDevName
+    int getType() -> getType
+    int getCode() -> getCode
+    int getValue() -> getValue
+    8:8:int access$100(int) -> a
+    8:8:java.lang.String access$200(int) -> b
+    151:158:void <clinit>() -> <clinit>
+com.tushar.cmspen2.libsuperuser.Events$InputDevice -> com.tushar.cmspen2.libsuperuser.c:
+    int m_nId -> b
+    java.lang.String m_szPath -> c
+    java.lang.String m_szName -> d
+    boolean m_bOpen -> e
+    com.tushar.cmspen2.libsuperuser.Events this$0 -> a
+    19:21:void <init>(com.tushar.cmspen2.libsuperuser.Events,int,java.lang.String) -> <init>
+    31:31:java.lang.String getName() -> a
+    33:33:java.lang.String getPath() -> b
+    41:76:boolean Open(boolean) -> a
+com.tushar.cmspen2.libsuperuser.Shell -> com.tushar.cmspen2.libsuperuser.d:
+    java.lang.String[] availableTestCommands -> a
+    86:183:java.util.List run(java.lang.String,java.lang.String[],java.lang.String[],boolean) -> a
+    200:218:boolean parseAvailableResult(java.util.List,boolean) -> a
+    186:186:void <clinit>() -> <clinit>
+com.tushar.cmspen2.libsuperuser.Shell$SU -> com.tushar.cmspen2.libsuperuser.e:
+    java.lang.Boolean isSELinuxEnforcing -> a
+    java.lang.String[] suVersion -> b
+    277:277:java.util.List run(java.lang.String) -> a
+    301:301:java.util.List run(java.lang.String[]) -> a
+    314:315:boolean available() -> a
+    384:395:boolean isSU(java.lang.String) -> b
+    264:265:void <clinit>() -> <clinit>
+com.tushar.cmspen2.libsuperuser.ShellOnMainThreadException -> com.tushar.cmspen2.libsuperuser.f:
+    31:32:void <init>(java.lang.String) -> <init>
+com.tushar.cmspen2.libsuperuser.StreamGobbler -> com.tushar.cmspen2.libsuperuser.g:
+    java.lang.String shell -> a
+    java.io.BufferedReader reader -> b
+    java.util.List writer -> c
+    com.tushar.cmspen2.libsuperuser.StreamGobbler$OnLineListener listener -> d
+    45:65:void <init>(java.lang.String,java.io.InputStream,java.util.List) -> <init>
+    89:104:void run() -> run
+com.tushar.cmspen2.libsuperuser.StreamGobbler$OnLineListener -> com.tushar.cmspen2.libsuperuser.h:
+    void onLine(java.lang.String) -> a
+com.tushar.cmspen2.util.Base64 -> com.tushar.cmspen2.a.a:
+    byte[] ALPHABET -> b
+    byte[] WEBSAFE_ALPHABET -> c
+    byte[] DECODABET -> d
+    byte[] WEBSAFE_DECODABET -> e
+    boolean $assertionsDisabled -> a
+    167:168:void <init>() -> <init>
+    376:404:int decode4to3(byte[],int,byte[],int,byte[]) -> a
+    417:418:byte[] decode(java.lang.String) -> a
+    472:472:byte[] decode(byte[],int,int) -> a
+    502:566:byte[] decode(byte[],int,int,byte[]) -> a
+    39:126:void <clinit>() -> <clinit>
+com.tushar.cmspen2.util.Base64DecoderException -> com.tushar.cmspen2.a.b:
+    24:25:void <init>() -> <init>
+    28:29:void <init>(java.lang.String) -> <init>
+com.tushar.cmspen2.util.IabException -> com.tushar.cmspen2.a.c:
+    com.tushar.cmspen2.util.IabResult mResult -> a
+    29:30:void <init>(com.tushar.cmspen2.util.IabResult) -> <init>
+    32:33:void <init>(int,java.lang.String) -> <init>
+    35:37:void <init>(com.tushar.cmspen2.util.IabResult,java.lang.Exception) -> <init>
+    39:40:void <init>(int,java.lang.String,java.lang.Exception) -> <init>
+    43:43:com.tushar.cmspen2.util.IabResult getResult() -> a
+com.tushar.cmspen2.util.IabHelper -> com.tushar.cmspen2.a.d:
+    boolean mDebugLog -> a
+    java.lang.String mDebugTag -> b
+    boolean mSetupDone -> c
+    boolean mDisposed -> d
+    boolean mSubscriptionsSupported -> e
+    boolean mAsyncInProgress -> f
+    java.lang.String mAsyncOperation -> g
+    android.content.Context mContext -> h
+    com.android.vending.billing.IInAppBillingService mService -> i
+    android.content.ServiceConnection mServiceConn -> j
+    int mRequestCode -> k
+    java.lang.String mPurchasingItemType -> l
+    java.lang.String mSignatureBase64 -> m
+    com.tushar.cmspen2.util.IabHelper$OnIabPurchaseFinishedListener mPurchaseListener -> n
+    74:167:void <init>(android.content.Context,java.lang.String) -> <init>
+    205:279:void startSetup(com.tushar.cmspen2.util.IabHelper$OnIabSetupFinishedListener) -> a
+    288:299:void dispose() -> a
+    302:303:void checkNotDisposed() -> c
+    333:334:void launchPurchaseFlow(android.app.Activity,java.lang.String,int,com.tushar.cmspen2.util.IabHelper$OnIabPurchaseFinishedListener) -> a
+    338:339:void launchPurchaseFlow(android.app.Activity,java.lang.String,int,com.tushar.cmspen2.util.IabHelper$OnIabPurchaseFinishedListener,java.lang.String) -> a
+    371:422:void launchPurchaseFlow(android.app.Activity,java.lang.String,java.lang.String,int,com.tushar.cmspen2.util.IabHelper$OnIabPurchaseFinishedListener,java.lang.String) -> a
+    439:518:boolean handleActivityResult(int,int,android.content.Intent) -> a
+    522:522:com.tushar.cmspen2.util.Inventory queryInventory(boolean,java.util.List) -> a
+    540:580:com.tushar.cmspen2.util.Inventory queryInventory(boolean,java.util.List,java.util.List) -> a
+    611:642:void queryInventoryAsync(boolean,java.util.List,com.tushar.cmspen2.util.IabHelper$QueryInventoryFinishedListener) -> a
+    645:646:void queryInventoryAsync(com.tushar.cmspen2.util.IabHelper$QueryInventoryFinishedListener) -> a
+    757:780:java.lang.String getResponseDesc(int) -> a
+    786:790:void checkSetupDone(java.lang.String) -> a
+    794:804:int getResponseCodeFromBundle(android.os.Bundle) -> a
+    810:820:int getResponseCodeFromIntent(android.content.Intent) -> a
+    825:830:void flagStartAsync(java.lang.String) -> b
+    833:836:void flagEndAsync() -> b
+    841:899:int queryPurchases(com.tushar.cmspen2.util.Inventory,java.lang.String) -> a
+    904:945:int querySkuDetails(java.lang.String,com.tushar.cmspen2.util.Inventory,java.util.List) -> a
+    987:988:void logDebug(java.lang.String) -> c
+    991:992:void logError(java.lang.String) -> d
+    995:996:void logWarn(java.lang.String) -> e
+com.tushar.cmspen2.util.IabHelper$1 -> com.tushar.cmspen2.a.e:
+    com.tushar.cmspen2.util.IabHelper$OnIabSetupFinishedListener val$listener -> a
+    com.tushar.cmspen2.util.IabHelper this$0 -> b
+    210:210:void <init>(com.tushar.cmspen2.util.IabHelper,com.tushar.cmspen2.util.IabHelper$OnIabSetupFinishedListener) -> <init>
+    213:215:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    219:262:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+com.tushar.cmspen2.util.IabHelper$2 -> com.tushar.cmspen2.a.f:
+    boolean val$querySkuDetails -> a
+    java.util.List val$moreSkus -> b
+    com.tushar.cmspen2.util.IabHelper$QueryInventoryFinishedListener val$listener -> c
+    android.os.Handler val$handler -> d
+    com.tushar.cmspen2.util.IabHelper this$0 -> e
+    615:615:void <init>(com.tushar.cmspen2.util.IabHelper,boolean,java.util.List,com.tushar.cmspen2.util.IabHelper$QueryInventoryFinishedListener,android.os.Handler) -> <init>
+    617:640:void run() -> run
+com.tushar.cmspen2.util.IabHelper$2$1 -> com.tushar.cmspen2.a.g:
+    com.tushar.cmspen2.util.IabResult val$result_f -> a
+    com.tushar.cmspen2.util.Inventory val$inv_f -> b
+    com.tushar.cmspen2.util.IabHelper$2 this$1 -> c
+    634:634:void <init>(com.tushar.cmspen2.util.IabHelper$2,com.tushar.cmspen2.util.IabResult,com.tushar.cmspen2.util.Inventory) -> <init>
+    636:637:void run() -> run
+com.tushar.cmspen2.util.IabHelper$OnIabPurchaseFinishedListener -> com.tushar.cmspen2.a.h:
+    void onIabPurchaseFinished(com.tushar.cmspen2.util.IabResult,com.tushar.cmspen2.util.Purchase) -> a
+com.tushar.cmspen2.util.IabHelper$OnIabSetupFinishedListener -> com.tushar.cmspen2.a.i:
+    void onIabSetupFinished(com.tushar.cmspen2.util.IabResult) -> a
+com.tushar.cmspen2.util.IabHelper$QueryInventoryFinishedListener -> com.tushar.cmspen2.a.j:
+    void onQueryInventoryFinished(com.tushar.cmspen2.util.IabResult,com.tushar.cmspen2.util.Inventory) -> a
+com.tushar.cmspen2.util.IabResult -> com.tushar.cmspen2.a.k:
+    int mResponse -> a
+    java.lang.String mMessage -> b
+    30:38:void <init>(int,java.lang.String) -> <init>
+    40:40:java.lang.String getMessage() -> a
+    41:41:boolean isSuccess() -> b
+    42:42:boolean isFailure() -> c
+    43:43:java.lang.String toString() -> toString
+com.tushar.cmspen2.util.Inventory -> com.tushar.cmspen2.a.l:
+    java.util.Map mSkuMap -> a
+    java.util.Map mPurchaseMap -> b
+    28:31:void <init>() -> <init>
+    45:45:boolean hasPurchase(java.lang.String) -> a
+    72:76:java.util.List getAllOwnedSkus(java.lang.String) -> b
+    85:86:void addSkuDetails(com.tushar.cmspen2.util.SkuDetails) -> a
+    89:90:void addPurchase(com.tushar.cmspen2.util.Purchase) -> a
+com.tushar.cmspen2.util.Purchase -> com.tushar.cmspen2.a.m:
+    java.lang.String mItemType -> a
+    java.lang.String mOrderId -> b
+    java.lang.String mPackageName -> c
+    java.lang.String mSku -> d
+    long mPurchaseTime -> e
+    int mPurchaseState -> f
+    java.lang.String mDeveloperPayload -> g
+    java.lang.String mToken -> h
+    java.lang.String mOriginalJson -> i
+    java.lang.String mSignature -> j
+    36:48:void <init>(java.lang.String,java.lang.String,java.lang.String) -> <init>
+    50:50:java.lang.String getItemType() -> a
+    53:53:java.lang.String getSku() -> b
+    57:57:java.lang.String getToken() -> c
+    62:62:java.lang.String toString() -> toString
+com.tushar.cmspen2.util.Security -> com.tushar.cmspen2.a.n:
+    56:63:boolean verifyPurchase(java.lang.String,java.lang.String,java.lang.String) -> a
+    75:85:java.security.PublicKey generatePublicKey(java.lang.String) -> a
+    101:118:boolean verify(java.security.PublicKey,java.lang.String,java.lang.String) -> a
+com.tushar.cmspen2.util.SkuDetails -> com.tushar.cmspen2.a.o:
+    java.lang.String mItemType -> a
+    java.lang.String mSku -> b
+    java.lang.String mType -> c
+    java.lang.String mPrice -> d
+    java.lang.String mTitle -> e
+    java.lang.String mDescription -> f
+    java.lang.String mJson -> g
+    37:46:void <init>(java.lang.String,java.lang.String) -> <init>
+    48:48:java.lang.String getSku() -> a
+    56:56:java.lang.String toString() -> toString

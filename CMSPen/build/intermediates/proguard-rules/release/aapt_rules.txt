@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:40
+-keep class com.tushar.cmspen2.BootReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.tushar.cmspen2.KeyboardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.tushar.cmspen2.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.tushar.cmspen2.SPenDetection { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.tushar.cmspen2.ScreenshotActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.tushar.cmspen2.TaskerEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.tushar.cmspen2.TaskerQueryReceiver { <init>(...); }
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you want to overwrite the existing file?"
+        android:id="@+id/crop_ask_body"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do not ask again"
+        android:id="@+id/crop_overwrite_pref"
+        android:layout_below="@+id/crop_ask_body"
+        android:layout_alignRight="@+id/crop_ask_body"
+        android:layout_alignEnd="@+id/crop_ask_body"
+        android:layout_alignLeft="@+id/crop_ask_body"
+        android:layout_alignStart="@+id/crop_ask_body" />
+</RelativeLayout>

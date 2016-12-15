@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CM SPen Add-on</string>
+    <string name="title_activity_keyboard">Select Keyboard</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_screenshot">Screenshot</string>
+    <string name="title_activity_tasker_edit">TaskerEditActivity</string>
+
+</resources>
