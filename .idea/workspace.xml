@@ -1,15 +1,519 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8891780d-8bae-453c-a17a-6d28f0c74f69" name="Default" comment="" />
+    <list default="true" id="c38a38ec-2735-4555-b7e0-00fac60ff9c3" name="Default" comment="Fix for">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/generated/source/aidl/debug/com/android/vending/billing/IInAppBillingService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/generated/source/aidl/release/com/android/vending/billing/IInAppBillingService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/generated/source/buildConfig/androidTest/debug/com/tushar/cmspen2/test/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/generated/source/buildConfig/debug/com/tushar/cmspen2/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/generated/source/buildConfig/release/com/tushar/cmspen2/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/generated/source/r/debug/com/tushar/cmspen2/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/generated/source/r/release/com/tushar/cmspen2/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes-proguard/release/classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/android/vending/billing/IInAppBillingService$Stub$Proxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/android/vending/billing/IInAppBillingService$Stub.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/android/vending/billing/IInAppBillingService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/BootReceiver$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/BootReceiver$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/BootReceiver$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/BootReceiver$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/BootReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ColorPickerView$OnColorChangedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ColorPickerView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/CropView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/DrawView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/DrawView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/EraserView$OnWidthChangedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/EraserView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/Exec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/KeyboardActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/KeyboardActivity$ListAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/KeyboardActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$21.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$22.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$23.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$24.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$25.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$6$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$CheckComp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity$LegacyHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$EventAsync$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$EventAsync$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$EventAsync$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$EventAsync$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$EventAsync$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$EventAsync$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$EventAsync.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection$EventHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/SPenDetection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$10$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$10$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$12$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$12$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$14$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$3$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$5$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$9$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$9$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/ScreenshotActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/TaskerEditActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/TaskerEditActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/TaskerEditActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/TaskerQueryReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Application$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Debug$OnLogListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Debug.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Events$InputDevice.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Events.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/HideOverlaysReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Policy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$Command.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$Interactive$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$Interactive$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$Interactive$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$Interactive$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$Interactive$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$Interactive$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$Interactive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$OnCommandLineListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$OnCommandResultListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$OnResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$SH.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell$SU.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Shell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/ShellNotClosedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/ShellOnMainThreadException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/StreamGobbler$OnLineListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/StreamGobbler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/libsuperuser/Toolbox.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/Base64.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/Base64DecoderException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$3$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$OnConsumeFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$OnConsumeMultiFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$OnIabPurchaseFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$OnIabSetupFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper$QueryInventoryFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/IabResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/Inventory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/Purchase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/Security.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/debug/com/tushar/cmspen2/util/SkuDetails.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/android/vending/billing/IInAppBillingService$Stub$Proxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/android/vending/billing/IInAppBillingService$Stub.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/android/vending/billing/IInAppBillingService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/BootReceiver$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/BootReceiver$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/BootReceiver$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/BootReceiver$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/BootReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ColorPickerView$OnColorChangedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ColorPickerView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/CropView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/DrawView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/DrawView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/EraserView$OnWidthChangedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/EraserView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/Exec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/KeyboardActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/KeyboardActivity$ListAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/KeyboardActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$21.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$22.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$23.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$24.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$25.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$6$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$CheckComp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity$LegacyHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$EventAsync$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$EventAsync$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$EventAsync$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$EventAsync$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$EventAsync$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$EventAsync$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$EventAsync.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection$EventHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/SPenDetection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$10$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$10$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$12$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$12$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$14$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$3$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$5$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$9$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$9$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/ScreenshotActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/TaskerEditActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/TaskerEditActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/TaskerEditActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/TaskerQueryReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Application$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Debug$OnLogListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Debug.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Events$InputDevice.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Events.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/HideOverlaysReceiver.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Policy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$Command.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$Interactive$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$Interactive$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$Interactive$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$Interactive$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$Interactive$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$Interactive$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$Interactive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$OnCommandLineListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$OnCommandResultListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$OnResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$SH.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell$SU.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Shell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/ShellNotClosedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/ShellOnMainThreadException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/StreamGobbler$OnLineListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/StreamGobbler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/libsuperuser/Toolbox.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/Base64.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/Base64DecoderException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$3$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$OnConsumeFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$OnConsumeMultiFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$OnIabPurchaseFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$OnIabSetupFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper$QueryInventoryFinishedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/IabResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/Inventory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/Purchase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/Security.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/classes/release/com/tushar/cmspen2/util/SkuDetails.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/dex/debug/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/dex/release/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/incremental/aidl/androidTest/debug/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/incremental/aidl/debug/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/incremental/aidl/release/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/incremental/mergeAssets/androidTest/debug/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/incremental/mergeAssets/release/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/incremental/mergeResourcesandroidTest/debug/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/incremental/mergeResourcesdebug/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/incremental/mergeResourcesrelease/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/mockable-android-19.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/Android.mk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/lib/arm64-v8a/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/lib/armeabi-v7a/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/lib/armeabi/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/lib/mips/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/lib/mips64/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/lib/x86/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/lib/x86_64/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/arm64-v8a/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/arm64-v8a/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/arm64-v8a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/arm64-v8a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/arm64-v8a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/arm64-v8a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi-v7a/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi-v7a/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi-v7a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi-v7a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi-v7a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi-v7a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/armeabi/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips64/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips64/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/mips64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86_64/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86_64/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86_64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86_64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86_64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/debug/obj/local/x86_64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/Android.mk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/lib/arm64-v8a/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/lib/armeabi-v7a/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/lib/armeabi/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/lib/mips/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/lib/mips64/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/lib/x86/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/lib/x86_64/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/arm64-v8a/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/arm64-v8a/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/arm64-v8a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/arm64-v8a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/arm64-v8a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/arm64-v8a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi-v7a/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi-v7a/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi-v7a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi-v7a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi-v7a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi-v7a/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/armeabi/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips64/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips64/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/mips64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86_64/libEventInjector.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86_64/libstdc++.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86_64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86_64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/EventInjector.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86_64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/ndk/release/obj/local/x86_64/objs/EventInjector/C_/Users/Tushar/AndroidstudioProjects/EventInjector/CMSPen/src/main/jni/nativeTerminal.o.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/pre-dexed/debug/android-support-v4-a7bb4f9df10aafa435eabd5f94ea9dca4b26092d.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/proguard-rules/release/aapt_rules.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_color.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_crop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_discard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_erase.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_keyboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_redo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_save.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_share.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_touchscreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_action_undo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/selector_with_transparency.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/drawable-xhdpi/transparent.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/layout/activity_keyboard.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/layout/activity_screenshot.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/layout/activity_tasker_edit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/layout/crop_ask.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/layout/main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/layout/selector_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/values-w820dp/values-w820dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/debug/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_color.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_crop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_discard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_erase.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_keyboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_redo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_save.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_share.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_touchscreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_action_undo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/selector_with_transparency.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/drawable-xhdpi/transparent.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/layout/activity_keyboard.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/layout/activity_screenshot.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/layout/activity_tasker_edit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/layout/crop_ask.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/layout/main.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/layout/selector_item.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/values-w820dp/values-w820dp.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/merged/release/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/resources-debug.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/intermediates/res/resources-release.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/outputs/apk/CMSPen-debug-unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/outputs/apk/CMSPen-debug.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/outputs/apk/CMSPen-release-unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/outputs/logs/manifest-merger-release-report.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/outputs/mapping/release/dump.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/outputs/mapping/release/mapping.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/outputs/mapping/release/seeds.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CMSPen/build/outputs/mapping/release/usage.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSPen/CMSPen.iml" afterPath="$PROJECT_DIR$/CMSPen/CMSPen.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSPen/build.gradle" afterPath="$PROJECT_DIR$/CMSPen/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java" afterPath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/KeyboardActivity.java" afterPath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/KeyboardActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java" afterPath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java" afterPath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/ScreenshotActivity.java" afterPath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/ScreenshotActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java" afterPath="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EventInjector.iml" afterPath="$PROJECT_DIR$/EventInjector.iml" />
+    </list>
     <ignored path="EventInjector.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,56 +528,22 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view />
-      </state>
-    </system>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="EventInjector" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SPenDetection.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29545453">
-              <caret line="108" column="67" selection-start-line="108" selection-start-column="67" selection-end-line="108" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScreenshotActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/ScreenshotActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="757" column="107" selection-start-line="757" selection-start-column="107" selection-end-line="757" selection-end-column="107" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Events.java" pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name="Events.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="110" selection-start-line="60" selection-start-column="110" selection-end-line="60" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventInjector.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/jni/EventInjector.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="238" column="77" selection-start-line="238" selection-start-column="77" selection-end-line="238" selection-end-column="77" />
-              <folding />
+            <state vertical-scroll-proportion="0.08777969">
+              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+              <folding>
+                <element signature="e#1195#1984#0" expanded="true" />
+                <element signature="e#1983#1984#0" expanded="true" />
+                <element signature="e#2969#3487#0" expanded="true" />
+                <element signature="e#3486#3487#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,37 +552,42 @@
         <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="534" column="47" selection-start-line="534" selection-start-column="47" selection-end-line="534" selection-end-column="47" />
+              <caret line="996" column="25" selection-start-line="996" selection-start-column="25" selection-end-line="996" selection-end-column="25" />
+              <folding>
+                <element signature="e#34780#35926#0" expanded="true" />
+                <element signature="e#35925#35926#0" expanded="true" />
+                <element signature="e#37430#37657#0" expanded="true" />
+                <element signature="e#37656#37657#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Debug.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Debug.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMSPen/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="239" column="21" selection-start-line="239" selection-start-column="21" selection-end-line="239" selection-end-column="21" />
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShellOnMainThreadException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/ShellOnMainThreadException.java">
+      <file leaf-file-name="ScreenshotActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/ScreenshotActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Shell.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Shell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="103" column="55" selection-start-line="103" selection-start-column="55" selection-end-line="103" selection-end-column="55" />
+              <caret line="737" column="34" selection-start-line="737" selection-start-column="34" selection-end-line="737" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -122,7 +597,49 @@
         <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
+              <caret line="95" column="54" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyboardActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/KeyboardActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="138" column="34" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
+              <folding>
+                <element signature="e#1462#2173#0" expanded="true" />
+                <element signature="e#2172#2173#0" expanded="true" />
+                <element signature="e#2273#2274#0" expanded="true" />
+                <element signature="e#2346#2347#0" expanded="true" />
+                <element signature="e#3929#4773#0" expanded="true" />
+                <element signature="e#4772#4773#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SPenDetection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.793103">
+              <caret line="213" column="74" selection-start-line="213" selection-start-column="74" selection-end-line="213" selection-end-column="74" />
+              <folding>
+                <element signature="e#3315#4128#0" expanded="true" />
+                <element signature="e#4127#4128#0" expanded="true" />
+                <element signature="e#4720#4859#0" expanded="true" />
+                <element signature="e#4858#4859#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventInjector.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMSPen/src/main/jni/EventInjector.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.333333">
+              <caret line="259" column="79" selection-start-line="259" selection-start-column="79" selection-end-line="259" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -130,10 +647,8 @@
       </file>
     </leaf>
   </component>
-  <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="C:\Users\Tushar\Desktop\cmspen" />
-    <option name="KEY_ALIAS" value="123" />
-    <option name="REMEMBER_PASSWORDS" value="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1136,8 +1651,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4312297166314" />
-        <entry key="C:\Users\Tushar\AndroidstudioProjects\EventInjector" value="4312297166314" />
+        <entry key="$PROJECT_DIR$" value="4458682500348" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1445,25 +1959,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/net/pocketmagic/android/eventinjector/Events.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/StreamGobbler.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Shell.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Application.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/HideOverlaysReceiver.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Policy.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/ShellNotClosedException.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/ShellOnMainThreadException.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Toolbox.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/DrawView.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/KeyboardActivity.java" />
         <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/ScreenshotActivity.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java" />
+        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/KeyboardActivity.java" />
+        <option value="$PROJECT_DIR$/CMSPen/build.gradle" />
         <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Debug.java" />
+        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java" />
         <option value="$PROJECT_DIR$/CMSPen/src/main/jni/EventInjector.c" />
-        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java" />
         <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java" />
+        <option value="$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java" />
       </list>
     </option>
   </component>
@@ -1473,7 +1976,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -1498,7 +2001,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1506,12 +2011,78 @@
               <option name="myItemId" value="EventInjector" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EventInjector" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMSPen" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EventInjector" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMSPen" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jni" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EventInjector" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMSPen" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmspen2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EventInjector" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CMSPen" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1521,10 +2092,8 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox" />
-    <property name="ExportApk.ApkPath" value="C:\Users\Tushar\Dropbox" />
-    <property name="ExportApk.Flavors" value="" />
-    <property name="ExportApk.BuildType" value="release" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="4df7ca831224cf4f" />
   </component>
   <component name="RunManager" selected="Android Application.CMSPen">
@@ -1773,7 +2342,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="CMSPen" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="false" name="CMSPen" type="AndroidRunConfigurationType" factoryName="Android Application" activateToolWindowBeforeRun="false">
       <module name="CMSPen" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -1863,63 +2432,45 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8891780d-8bae-453c-a17a-6d28f0c74f69" name="Default" comment="" />
-      <created>1454749572415</created>
+      <changelist id="c38a38ec-2735-4555-b7e0-00fac60ff9c3" name="Default" comment="" />
+      <created>1486226167330</created>
       <option name="number" value="Default" />
-      <updated>1454749572415</updated>
+      <updated>1486226167330</updated>
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16364606" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15458423" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1929,380 +2480,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="132" column="67" selection-start-line="130" selection-start-column="24" selection-end-line="132" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/jni/EventInjector.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="229" column="11" selection-start-line="229" selection-start-column="11" selection-end-line="229" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="534" column="47" selection-start-line="534" selection-start-column="47" selection-end-line="534" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/jni/EventInjector.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="229" column="11" selection-start-line="229" selection-start-column="11" selection-end-line="229" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="534" column="47" selection-start-line="534" selection-start-column="47" selection-end-line="534" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/jni/EventInjector.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="229" column="11" selection-start-line="229" selection-start-column="11" selection-end-line="229" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="534" column="47" selection-start-line="534" selection-start-column="47" selection-end-line="534" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="389" column="5" selection-start-line="389" selection-start-column="5" selection-end-line="389" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="13" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="945" column="33" selection-start-line="945" selection-start-column="33" selection-end-line="945" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="404" column="0" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="945" column="33" selection-start-line="945" selection-start-column="33" selection-end-line="945" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/KeyboardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="74" selection-start-line="74" selection-start-column="74" selection-end-line="74" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/HideOverlaysReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Policy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038636364">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Toolbox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40568182">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/ShellNotClosedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038636364">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/StreamGobbler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3715909">
-          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39812645">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/ColorPickerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.048602674">
-          <caret line="94" column="34" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/CropView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.048602674">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/DrawView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3329283">
-          <caret line="325" column="20" selection-start-line="325" selection-start-column="12" selection-end-line="325" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/EraserView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15795869">
-          <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/Exec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20656136">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/KeyboardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.890644">
-          <caret line="158" column="29" selection-start-line="158" selection-start-column="29" selection-end-line="158" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/TaskerEditActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2636695">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/TaskerQueryReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18590522">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/jni/nativeTerminal.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.989449">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="534" column="47" selection-start-line="534" selection-start-column="47" selection-end-line="534" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Debug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="239" column="21" selection-start-line="239" selection-start-column="21" selection-end-line="239" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/ShellOnMainThreadException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Shell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="55" selection-start-line="103" selection-start-column="55" selection-end-line="103" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.3321859">
+          <caret line="310" column="30" selection-start-line="310" selection-start-column="30" selection-end-line="310" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/KeyboardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="34" selection-start-line="138" selection-start-column="34" selection-end-line="138" selection-end-column="34" />
+          <folding>
+            <element signature="e#1462#2173#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
+            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#2346#2347#0" expanded="true" />
+            <element signature="e#3929#4773#0" expanded="true" />
+            <element signature="e#4772#4773#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMSPen/src/main/jni/EventInjector.c">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.333333">
+          <caret line="259" column="79" selection-start-line="259" selection-start-column="79" selection-end-line="259" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.793103">
+          <caret line="213" column="74" selection-start-line="213" selection-start-column="74" selection-end-line="213" selection-end-column="74" />
+          <folding>
+            <element signature="e#3315#4128#0" expanded="true" />
+            <element signature="e#4127#4128#0" expanded="true" />
+            <element signature="e#4720#4859#0" expanded="true" />
+            <element signature="e#4858#4859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/BootReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="238" column="77" selection-start-line="238" selection-start-column="77" selection-end-line="238" selection-end-column="77" />
+          <caret line="95" column="54" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -2310,25 +2535,49 @@
     <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/ScreenshotActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="757" column="107" selection-start-line="757" selection-start-column="107" selection-end-line="757" selection-end-column="107" />
+          <caret line="737" column="34" selection-start-line="737" selection-start-column="34" selection-end-line="737" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSPen/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="996" column="25" selection-start-line="996" selection-start-column="25" selection-end-line="996" selection-end-column="25" />
+          <folding>
+            <element signature="e#34780#35926#0" expanded="true" />
+            <element signature="e#35925#35926#0" expanded="true" />
+            <element signature="e#37430#37657#0" expanded="true" />
+            <element signature="e#37656#37657#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/libsuperuser/Events.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="110" selection-start-line="60" selection-start-column="110" selection-end-line="60" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMSPen/src/main/java/com/tushar/cmspen2/SPenDetection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29545453">
-          <caret line="108" column="67" selection-start-line="108" selection-start-column="67" selection-end-line="108" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.08777969">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1195#1984#0" expanded="true" />
+            <element signature="e#1983#1984#0" expanded="true" />
+            <element signature="e#2969#3487#0" expanded="true" />
+            <element signature="e#3486#3487#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,10 @@
 package com.tushar.cmspen2.libsuperuser;
 
 import java.util.ArrayList;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 import android.util.Log;
 
@@ -39,35 +43,39 @@ public class Events
 		 */
 		public boolean Open(boolean forceOpen) {
 			int res = OpenDev(m_nId);
-	   		// if opening fails, we might not have the correct permissions, try changing 660 to 666
+
 	   		if (res != 0) {
-	   			// possible only if we have root
-	   			if(forceOpen && Shell.SU.available()) {
-	   				// set new permissions
-	   				Shell.SU.run("chmod 666 "+ m_szPath);
-	   				// reopen
-	   			    res = OpenDev(m_nId);
-                    if(res != 0)
-                    {
-						/*Shell.SU.run("supolicy --live " +
-								"\"allow appdomain input_device dir { ioctl read getattr search open }\" " +
-								"\"allow appdomain input_device chr_file { ioctl read write getattr lock append open }\" " +
-								"\"allow untrusted_app input_device chr_file { ioctl read write getattr lock append open }\" " +
-								"\"allow untrusted_app input_device dir { ioctl read getattr search open }\"");*/
-                        //Shell.SU.run("supolicy --live " +
-                                //"\"allow fuse tmpfs filesystem { associate }\"");
-                        //Shell.SU.run("chcon u:object_r:fuse:s0 /dev/input/*");
-						//Shell.SU.run("supolicy --live \"permissive input_device\"");
-                        Shell.SU.run("su --context u:r:init:s0 -c \"chcon u:object_r:fuse:s0 /dev/input/*\"");
-                        res = OpenDev(m_nId);
-                        /*if(res != 0)
-                        {
-                            Shell.runCommand("setenforce 0");
+
+                ExecutorService executorService = Executors.newSingleThreadExecutor();
+
+                Future<Integer> resultFuture = executorService.submit(new Callable<Integer>() {
+                    @Override
+                    public Integer call() throws Exception {
+                        int res = -1;
+
+                        if(Shell.SU.available()) {
+
+                            Shell.SU.run("chmod 666 "+ m_szPath);
                             res = OpenDev(m_nId);
-                        }*/
+                            if(res != 0)
+                            {
+                                Shell.SU.run("supolicy --live " +
+                                        "\"permissive appdomain\"" +
+                                        "\"permissive untrusted_app\"");
+                                res = OpenDev(m_nId);
+                            }
+                        }
+
+                        return res;
                     }
-	   			}
-	   		}
+                });
+
+                try {
+                    res = resultFuture.get();
+                } catch (Exception e) {
+                    res = -1;
+                }
+            }
 	   		m_szName = getDevName(m_nId);
 	   		m_bOpen = (res == 0);
 	   		// debug
@@ -88,47 +96,38 @@ public class Events
     }
 	
 	// top level structures
-	public ArrayList<InputDevice> m_Devs = new ArrayList<InputDevice>(); 
-	
-	/*private void displayError()
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(this,android.R.style.Theme_DeviceDefault));
-        builder.setTitle("Screenshot failed");
-        builder.setMessage("Please install SuperSU from the Play Store and try again.");
-        builder.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                //finish();
-            }
-        });
-        builder.setCancelable(false);
-        builder.show();
-    }*/
+	public ArrayList<InputDevice> m_Devs = new ArrayList<InputDevice>();
 
 	public int Init() {
 		m_Devs.clear();
 		int n = ScanFiles(); // return number of devs
 		if(n == -1)
 		{
-			if(Shell.SU.available())
-            {
-				/*Shell.SU.run("supolicy --live " +
-						"\"allow appdomain input_device dir { ioctl read getattr search open }\" " +
-						"\"allow appdomain input_device chr_file { ioctl read write getattr lock append open }\" " +
-						"\"allow untrusted_app input_device chr_file { ioctl read write getattr lock append open }\" " +
-						"\"allow untrusted_app input_device dir { ioctl read getattr search open }\"");*/
-                //Shell.SU.run("supolicy --live " +
-                        //"\"allow fuse tmpfs filesystem { associate }\"");
-                Shell.SU.run("su --context u:r:init:s0 -c \"chcon u:object_r:fuse:s0 /dev/input/*\"");
-				//Shell.SU.run("supolicy --live \"permissive input_device\"");
-                n = ScanFiles();
-                //if(n == -1)
-                //{
-                    //displayError();
-                    //Shell.runCommand("setenforce 0");
-                    //n = ScanFiles();
-                //}
+            ExecutorService executorService = Executors.newSingleThreadExecutor();
+
+            Future<Integer> resultFuture = executorService.submit(new Callable<Integer>() {
+                @Override
+                public Integer call() throws Exception {
+                    int n = -1;
+
+                    if(Shell.SU.available())
+                    {
+                        Shell.SU.run("supolicy --live " +
+                                "\"permissive appdomain\"" +
+                                "\"permissive untrusted_app\"");
+                        n = ScanFiles();
+                    }
+
+                    return n;
+                }
+            });
+
+            try {
+                n = resultFuture.get();
+            } catch (Exception e) {
+                n = -1;
             }
-		}
+        }
 	   	
 		for (int i=0;i < n;i++) 
 			m_Devs.add(new InputDevice(i, getDevPath(i)));

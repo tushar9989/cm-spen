@@ -58,6 +58,13 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
+import java.util.concurrent.RunnableFuture;
 
 public class MainActivity extends Activity {
     //int id = -1;
@@ -558,7 +565,7 @@ public class MainActivity extends Activity {
 
         //Button Adjustments
 
-        minSeekBar.setProgress(pref.getInt("long_min_offset", 7));
+        minSeekBar.setProgress(pref.getInt("long_min_offset", 4));
         minSeekDisp.setText(SPenDetection.Long_Min_Map[minSeekBar.getProgress()] + " ms");
 
         minSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -586,7 +593,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        int max_offset = pref.getInt("long_max_offset", 3);
+        int max_offset = pref.getInt("long_max_offset", 5);
         maxSeekBar.setProgress(max_offset);
         if(max_offset != 16)
             maxSeekDisp.setText(SPenDetection.Long_Max_Map[maxSeekBar.getProgress()] + " ms");
@@ -912,23 +919,37 @@ public class MainActivity extends Activity {
     {
         if(appInstalledOrNot("com.tushar.cmspen", ctx))
         {
-            if(Shell.SU.available())
-            {
-                Shell.SU.run("cat /data/data/com.tushar.cmspen/shared_prefs/com.tushar.cmspen_preferences.xml | grep button_features > /sdcard/cmspen.temp");
-                File ip = new File(Environment.getExternalStorageDirectory().getPath() + "/cmspen.temp");
-                if(ip.exists())
-                {
-                    try
+            ExecutorService executorService = Executors.newSingleThreadExecutor();
+
+            Future<Boolean> result = executorService.submit(new Callable<Boolean>() {
+                @Override
+                public Boolean call() throws Exception {
+                    if(Shell.SU.available())
                     {
-                        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(ip)));
-                        String check = br.readLine();
-                        return check.contains("true");
+                        Shell.SU.run("cat /data/data/com.tushar.cmspen/shared_prefs/com.tushar.cmspen_preferences.xml | grep button_features > /sdcard/cmspen.temp");
+                        File ip = new File(Environment.getExternalStorageDirectory().getPath() + "/cmspen.temp");
+                        if(ip.exists())
+                        {
+                            try
+                            {
+                                BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(ip)));
+                                String check = br.readLine();
+                                return check.contains("true");
+                            }
+                            catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                            ip.delete();
+                        }
                     }
-                    catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                    ip.delete();
+                    return false;
                 }
+            });
+
+            try {
+                return result.get();
+            } catch (Exception e) {
+                return false;
             }
         }
         return false;
@@ -968,9 +989,17 @@ public class MainActivity extends Activity {
         return String.valueOf(result);
     }
 
-    static void simKey(int kc)
+    static void simKey(final int kc)
     {
-        Shell.SU.run("input keyevent " + kc);
+        new Thread() {
+            @Override
+            public void run() {
+                if(Shell.SU.available())
+                {
+                    Shell.SU.run("input keyevent " + kc);
+                }
+            }
+        }.start();
     }
 
     class CheckComp extends AsyncTask<Void, Void, Boolean> {
@@ -1002,7 +1031,6 @@ public class MainActivity extends Activity {
                             if(currentname.contains("sec_e-pen"))
                             {
                                 temp = true;
-                                //id = events.m_Devs.indexOf(idev);
                                 path = idev.getPath();
                             }
                             if(temp)
@@ -1015,7 +1043,6 @@ public class MainActivity extends Activity {
                     }
                 }
             }
-            //events.Release();
             return temp;
         }
 

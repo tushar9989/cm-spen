@@ -642,129 +642,121 @@ public class ScreenshotActivity extends Activity {
         }
     }
 
-    public static void takeScreenshot(Context ctx, boolean external)
+    public static void takeScreenshot(final Context ctx, boolean external)
     {
         if(PreferenceManager.getDefaultSharedPreferences(ctx).getBoolean("ss_enable", false) || external)
         {
-            try
-            {
-                Thread.sleep(200);
-            }
-            catch(Exception e)
-            {
-                e.printStackTrace();
-            }
-            Intent launch = new Intent(ctx, ScreenshotActivity.class);
-            String ss_path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/Screenshots";
-
-            //String ss_path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Pictures/Screenshots";
-            //String ss_path = "/sdcard";
-
-            DateFormat df = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss", Locale.getDefault());
-            String ss_title = df.format(Calendar.getInstance().getTime());
-            boolean failed = false;
-            String ss_name = ss_path + "/" + ss_title + ".png";
-            File ss_check = new File(ss_path);
-            ss_check.mkdirs();
-
-            if(!MainActivity.appInstalledOrNot("eu.chainfire.supersu", ctx))
-            {
-                String su = "su";
-                String screencap = "screencap";
-                String path_list[] = {"/system/bin/", "/system/xbin/"};
-                boolean found[] = {false, false};
-                for(int i = 0; i < 2; i++)
-                {
-                    File temp;
-                    if(!found[0])
-                    {
-                        temp = new File(path_list[i] + su);
-                        if(temp.exists())
-                        {
-                            su = path_list[i] + su;
-                            found[0] = true;
-                        }
-                    }
-                    if(!found[1])
-                    {
-                        temp = new File(path_list[i] + screencap);
-                        if(temp.exists())
-                        {
-                            screencap = path_list[i] + screencap;
-                            found[1] = true;
-                        }
-                    }
-                }
-                if(found[0] && found[1])
-                {
-                    int processId[] = new int[1];
-                    String args[] = {su};
-                    FileDescriptor fd = Exec.createSubprocess(args[0], args, null, processId);
-                    final int pid = processId[0];
-                    OutputStream out = new FileOutputStream(fd);
-                    String command = screencap + " -p " + ss_name + "\n";
-                    String exit = "exit\n";
+            new Thread() {
+                @Override
+                public void run() {
                     try
                     {
-                        //long startTime = System.currentTimeMillis();
-                        out.write(command.getBytes());
-                        out.write(exit.getBytes());
-                        //Exec.waitFor(pid);
-                        //long finishTime = System.currentTimeMillis();
-                        //Toast.makeText(ctx, String.valueOf((float)(finishTime - startTime)/1000),Toast.LENGTH_LONG).show();
-                        ExecutorService executor = Executors.newCachedThreadPool();
-                        Callable<Void> task = new Callable<Void>() {
-                            public Void call() {
-                                Exec.waitFor(pid);
-                                return null;
-                            }
-                        };
-                        Future<Void> future = executor.submit(task);
-                        try {
-                            future.get(8, TimeUnit.SECONDS);
-                        }
-                        catch (TimeoutException ex) {
-                            Exec.hangupProcessGroup(pid);
-                            failed = true;
-                        }
-                        catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                        out.close();
-                        Exec.close(fd);
+                        Thread.sleep(200);
                     }
                     catch(Exception e)
                     {
                         e.printStackTrace();
                     }
+                    Intent launch = new Intent(ctx, ScreenshotActivity.class);
+                    String ss_path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES) + "/Screenshots";
+
+                    DateFormat df = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss", Locale.getDefault());
+                    String ss_title = df.format(Calendar.getInstance().getTime());
+                    boolean failed = false;
+                    String ss_name = ss_path + "/" + ss_title + ".png";
+                    File ss_check = new File(ss_path);
+                    boolean directorySuccessful = ss_check.mkdirs();
+
+                    if(!MainActivity.appInstalledOrNot("eu.chainfire.supersu", ctx))
+                    {
+                        String su = "su";
+                        String screencap = "screencap";
+                        String path_list[] = {"/system/bin/", "/system/xbin/"};
+                        boolean found[] = {false, false};
+                        for(int i = 0; i < 2; i++)
+                        {
+                            File temp;
+                            if(!found[0])
+                            {
+                                temp = new File(path_list[i] + su);
+                                if(temp.exists())
+                                {
+                                    su = path_list[i] + su;
+                                    found[0] = true;
+                                }
+                            }
+                            if(!found[1])
+                            {
+                                temp = new File(path_list[i] + screencap);
+                                if(temp.exists())
+                                {
+                                    screencap = path_list[i] + screencap;
+                                    found[1] = true;
+                                }
+                            }
+                        }
+                        if(found[0] && found[1])
+                        {
+                            int processId[] = new int[1];
+                            String args[] = {su};
+                            FileDescriptor fd = Exec.createSubprocess(args[0], args, null, processId);
+                            final int pid = processId[0];
+                            OutputStream out = new FileOutputStream(fd);
+                            String command = screencap + " -p " + ss_name + "\n";
+                            String exit = "exit\n";
+                            try
+                            {
+                                out.write(command.getBytes());
+                                out.write(exit.getBytes());
+                                ExecutorService executor = Executors.newCachedThreadPool();
+                                Callable<Void> task = new Callable<Void>() {
+                                    public Void call() {
+                                        Exec.waitFor(pid);
+                                        return null;
+                                    }
+                                };
+                                Future<Void> future = executor.submit(task);
+                                try {
+                                    future.get(8, TimeUnit.SECONDS);
+                                }
+                                catch (TimeoutException ex) {
+                                    Exec.hangupProcessGroup(pid);
+                                    failed = true;
+                                }
+                                catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                                out.close();
+                                Exec.close(fd);
+                            }
+                            catch(Exception e)
+                            {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                    else if(Shell.SU.available()) {
+                        Log.d("CMSPen", "SuperSU");
+                        Log.d("CMSPen", "screencap -p " + ss_name);
+                        Shell.SU.run("screencap -p " + ss_name);
+                    }
+
+                    int rotation = ((WindowManager) ctx.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getRotation();
+
+                    launch.putExtra("rotation", rotation);
+                    PreferenceManager.getDefaultSharedPreferences(ctx).edit().putBoolean("toRotate", true).apply();
+                    launch.putExtra("ss_name", ss_name);
+                    launch.putExtra("ss_title", ss_title);
+                    launch.putExtra("failed", failed);
+
+                    launch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    launch.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    launch.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+                    launch.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                    ctx.startActivity(launch);
+
                 }
-            }
-            else if(Shell.SU.available()) {
-                //Toast.makeText(ctx, "SuperSU", Toast.LENGTH_LONG).show();
-                Log.d("CMSPen", "SuperSU");
-                Log.d("CMSPen", "screencap -p " + ss_name);
-                /*try {
-                    Process p = Runtime.getRuntime().exec(("su -c screencap -p " + ss_name));
-                    p.waitFor();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }*/
-                Shell.SU.run("screencap -p " + ss_name);
-            }
-
-            int rotation = ((WindowManager) ctx.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getRotation();
-
-            launch.putExtra("rotation", rotation);
-            PreferenceManager.getDefaultSharedPreferences(ctx).edit().putBoolean("toRotate", true).apply();
-            launch.putExtra("ss_name", ss_name);
-            launch.putExtra("ss_title", ss_title);
-            launch.putExtra("failed", failed);
-
-            launch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            launch.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            launch.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-            launch.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-            ctx.startActivity(launch);
+            }.start();
         }
     }
 }

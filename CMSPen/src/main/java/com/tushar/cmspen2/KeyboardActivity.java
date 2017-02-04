@@ -112,53 +112,37 @@ public class KeyboardActivity extends Activity {
 	    }
 	  }
 
-    public static void Switch(String id, String switchTo, Context ctx)
+    public static void Switch(final String id, final String switchTo, Context ctx)
     {
-        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(ctx);
-        SharedPreferences.Editor edit = pref.edit();
+        final SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(ctx);
+        final SharedPreferences.Editor edit = pref.edit();
 
-        String c_kb = Settings.Secure.getString(ctx.getContentResolver(), Settings.Secure.DEFAULT_INPUT_METHOD);
-        /*int mode = pref.getInt(id + "mode", 0);
-        if(mode == 1)
-        {
-            edit.putInt(id + "mode", 0);
-        }
-        else
-        {
-            edit.putInt(id + "mode", 1);
-        }
-        edit.apply();
+        final String[] c_kb = {Settings.Secure.getString(ctx.getContentResolver(), Settings.Secure.DEFAULT_INPUT_METHOD)};
 
-        if(mode == 0)
-        {
-            c_kb = Settings.Secure.getString(ctx.getContentResolver(), Settings.Secure.DEFAULT_INPUT_METHOD);
-            edit.putString(id + "c_kb", c_kb);
-            edit.apply();
-        }
-        else
-        {
-            switchTo = pref.getString(id + "c_kb", "");
-        }*/
+		new Thread() {
+            @Override
+            public void run() {
 
-        if(!switchTo.equals("") && Shell.SU.available())
-        {
-            if(!switchTo.equals(c_kb))
-            {
-                Shell.SU.run("ime set " + switchTo);
-                edit.putString(id + "c_kb", c_kb);
-                edit.apply();
-            }
-            else
-            {
-                c_kb = pref.getString(id + "c_kb", "");
-                if(!c_kb.equals(""))
+                if(!switchTo.equals("") && Shell.SU.available())
                 {
-					Shell.SU.run("ime set " + c_kb);
+                    if(!switchTo.equals(c_kb[0]))
+                    {
+                        Shell.SU.run("ime set " + switchTo);
+                        edit.putString(id + "c_kb", c_kb[0]);
+                        edit.apply();
+                    }
+                    else
+                    {
+                        c_kb[0] = pref.getString(id + "c_kb", "");
+                        if(!c_kb[0].equals(""))
+                        {
+                            Shell.SU.run("ime set " + c_kb[0]);
+                        }
+                        edit.putString(id + "c_kb", "");
+                        edit.apply();
+                    }
                 }
-                edit.putString(id + "c_kb", "");
-                edit.apply();
             }
-        }
-
+        }.start();
     }
 }

@@ -21,24 +21,24 @@ import android.provider.Settings;
 import android.util.Log;
 import android.widget.Toast;
 
+import java.util.concurrent.Callable;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
 public class SPenDetection extends Service {
-    //Events events = new Events();
     static Vibrator v;
-    //int id = -1;
     String path = "";
     int spenFD = -1;
     public static int polling = 3;
     static Intent i = new Intent("com.samsung.pen.INSERT");
     static Intent SPen_Event = new Intent("com.tushar.cm_spen.SPEN_EVENT");
     static WakeLock screenLock;
-    //static InputDevice idev;
     static SharedPreferences pref;
-    //static SharedPreferences.Editor editor;
     static EventHandler h;
     static Handler pCheck;
     static Handler timeout;
-    //static int touchk_id = -1;
-    //static int touchs_id = -1;
     static String touchs_path = "", touchk_path = "";
     static int touchk_fd = -1;
     static int touchs_fd = -1;
@@ -47,8 +47,6 @@ public class SPenDetection extends Service {
             1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000 };
     static int Long_Max_Map[] = { 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000, 3200,
             3400, 3600, 3800, 4000, 4200, 4400, 60000 };
-    //static KeyguardManager km;
-    //static KeyguardManager.KeyguardLock kl;
 
     //Tasker
     private static int Tasker_Last_Event = -1;
@@ -75,32 +73,9 @@ public class SPenDetection extends Service {
         pref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         enableBlockCompat(this);
         touchk_fd = touchs_fd = -1;
-        //if(Shell.isSuAvailable())
-        //Shell.runCommand("setenforce 0");
-        //events.Init();
-        SPen_Event.setPackage("com.tushar.spen_helper");
-        /*new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Shell.SU.run("supolicy --live \"permissive chr_file\" \"permissive dir\"");
-            }
-        }).start();
-        //editor = pref.edit();
-
-        //km = (KeyguardManager) SPenDetection.this.getSystemService(Context.KEYGUARD_SERVICE);
-        //kl = km.newKeyguardLock("CMSPen");
-
-        //touchk_id = pref.getInt("touchk_id", -1);
-        //touchs_id = pref.getInt("touchs_id", -1);
         touchs_path = pref.getString("touchs_path", "");
         touchk_path = pref.getString("touchk_path", "");
-
-        /*id = pref.getInt("id", -1);
-        if(id == -1)
-        {
-            stopSelf();
-            Log.d("CMSPen","Service stopped because ID is -1");
-        }*/
+        SPen_Event.setPackage("com.tushar.spen_helper");
 
         path = pref.getString("path", "");
         if(path.equals(""))
@@ -112,40 +87,35 @@ public class SPenDetection extends Service {
         v = (Vibrator) getApplicationContext().getSystemService(VIBRATOR_SERVICE);
         try
         {
-            //idev = events.m_Devs.get(id);
-            /*if(!idev.Open(true))
-            {
-                Log.d("CMSPen","Service stopped because Event file could not be opened.");
-                stopSelf();
-            }*/
-
             spenFD = openFromPath(path);
             if(spenFD == -1)
             {
-                if(Shell.SU.available())
-                {
-                    Shell.SU.run("chmod 666 "+ path);
-                    spenFD = openFromPath(path);
+                ExecutorService executorService = Executors.newSingleThreadExecutor();
 
-                    if(spenFD == -1)
-                    {
-                        /*Shell.SU.run("supolicy --live " +
-                                "\"allow appdomain input_device dir { ioctl read getattr search open }\" " +
-                                "\"allow appdomain input_device chr_file { ioctl read write getattr lock append open }\" " +
-                                "\"allow untrusted_app:s0:c512,c768 input_device:s0 chr_file { ioctl read write getattr lock append open }\" " +
-                                "\"allow untrusted_app:s0:c512,c768 input_device:s0 dir { ioctl read getattr search open }\"");*/
-                        //Shell.SU.run("supolicy --live " +
-                                //"\"allow fuse tmpfs filesystem { associate }\"");
-                        Shell.SU.run("chcon u:r:untrusted_app:s0:c512,c768 /dev/input");
-                        Shell.SU.run("chcon u:r:untrusted_app:s0:c512,c768 /dev/input/*");
+                Future<Integer> sPenFdFuture = executorService.submit(new Callable<Integer>() {
+                    @Override
+                    public Integer call() throws Exception {
+                        int fd = -1;
 
-                        Shell.SU.run("toolbox -chcon u:r:untrusted_app:s0:c512,c768 /dev/input");
-                        Shell.SU.run("toolbox -chcon u:r:untrusted_app:s0:c512,c768 /dev/input");
-                        //Shell.SU.run("supolicy --live \"permissive input_device\"");
-                        //Shell.SU.run("su --context u:r:init:s0 -c \"chcon u:object_r:fuse:s0 /dev/input/*\"");
-                        spenFD = openFromPath(path);
+                        if(Shell.SU.available())
+                        {
+                            Shell.SU.run("chmod 666 "+ path);
+                            fd = openFromPath(path);
+
+                            if(fd == -1)
+                            {
+                                Shell.SU.run("supolicy --live " +
+                                        "\"permissive appdomain\"" +
+                                        "\"permissive untrusted_app\"");
+                                fd = openFromPath(path);
+                            }
+                        }
+
+                        return fd;
                     }
-                }
+                });
+
+                spenFD = sPenFdFuture.get();
             }
 
             if (spenFD == -1)
@@ -205,7 +175,7 @@ public class SPenDetection extends Service {
                         Tasker_Last_Event = -1;
                         break;
                     }
-                    if(/*idev.getPollingEvent() == 0*/PollDevFD(spenFD) == 0)
+                    if(PollDevFD(spenFD) == 0)
                     {
                         //Log.d("CMSPen","got polling event");
                         lastEventTime = System.currentTimeMillis();
@@ -262,7 +232,10 @@ public class SPenDetection extends Service {
                                     e.printStackTrace();
                                 }
                                 KbHandle(1);
-                                //blockStop();
+                                if(pref.getBoolean("block_enable", false))
+                                    touchBlockStop();
+                                if(pref.getBoolean("soft_block_enable", false))
+                                    softBlockStop();
                                 inserted = true;
                             }
                         }
@@ -445,7 +418,9 @@ public class SPenDetection extends Service {
     synchronized static void touchBlockStart()
     {
         if(!touchs_path.equals(""))
+        {
             touchs_fd = BlockStart(touchs_path);
+        }
     }
 
     synchronized static void softBlockStart()
@@ -510,7 +485,6 @@ public class SPenDetection extends Service {
     public void onDestroy() {
         super.onDestroy();
         Log.d("CMSPen", "Service Destroyed");
-        //events.Release();
         blockStop();
         if(screenLock.isHeld())
             screenLock.release();
@@ -532,12 +506,10 @@ public class SPenDetection extends Service {
                         if (idev.Open(true)) {
                             String currentname = idev.getName();
                             if (currentname.contains("sec_touchscreen")) {
-                                //edit.putInt("touchs_id", events.m_Devs.indexOf(idev));
                                 edit.putString("touchs_path", idev.getPath());
                                 temp = true;
                             }
                             if (currentname.contains("sec_touchkey")) {
-                                //edit.putInt("touchk_id", events.m_Devs.indexOf(idev));
                                 edit.putString("touchk_path", idev.getPath());
                                 temp2 = true;
                             }
@@ -549,7 +521,6 @@ public class SPenDetection extends Service {
                     }
                 }
             }
-            //events.Release();
             edit.apply();
         }
     }

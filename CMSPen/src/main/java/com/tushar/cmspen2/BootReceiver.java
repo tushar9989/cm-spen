@@ -34,7 +34,10 @@ public class BootReceiver extends BroadcastReceiver {
             {
                 public void run()
                 {
-                    ScreenshotActivity.takeScreenshot(ctx, true);
+                    if(Shell.SU.available())
+                    {
+                        ScreenshotActivity.takeScreenshot(ctx, true);
+                    }
                 }
             }.start();
         }
@@ -67,38 +70,34 @@ public class BootReceiver extends BroadcastReceiver {
                     String blockWhat = i.getStringExtra("blockWhat");
                     if(blockWhat != null)
                     {
-                        if(blockWhat.equals("Screen"))
-                        {
-                            if(SPenDetection.touchs_fd == -1) {
-                                SPenDetection.touchBlockStart();
-                            }
-                            else {
-                                SPenDetection.touchBlockStop();
-                            }
-                        }
-                        else if(blockWhat.equals("Keys"))
-                        {
-                            if(SPenDetection.touchk_fd == -1) {
-                                SPenDetection.softBlockStart();
-                            }
-                            else {
-                                SPenDetection.softBlockStop();
-                            }
-                        }
-                        else if(blockWhat.equals("Both"))
-                        {
-                            if(SPenDetection.touchs_fd == -1)
-                                SPenDetection.touchBlockStart();
-                            if(SPenDetection.touchk_fd == -1) {
-                                SPenDetection.softBlockStart();
-                                return;
-                            }
-                            if(SPenDetection.touchk_fd != -1 || SPenDetection.touchs_fd != -1)
+                        switch (blockWhat) {
+                            case "Screen":
+                                if (SPenDetection.touchs_fd == -1) {
+                                    SPenDetection.touchBlockStart();
+                                } else {
+                                    SPenDetection.touchBlockStop();
+                                }
+                                break;
+                            case "Keys":
+                                if (SPenDetection.touchk_fd == -1) {
+                                    SPenDetection.softBlockStart();
+                                } else {
+                                    SPenDetection.softBlockStop();
+                                }
+                                break;
+                            case "Both":
+                                if (SPenDetection.touchs_fd == -1)
+                                    SPenDetection.touchBlockStart();
+                                if (SPenDetection.touchk_fd == -1) {
+                                    SPenDetection.softBlockStart();
+                                    return;
+                                }
+                                if (SPenDetection.touchk_fd != -1 || SPenDetection.touchs_fd != -1)
+                                    SPenDetection.blockStop();
+                                break;
+                            case "Stop":
                                 SPenDetection.blockStop();
-                        }
-                        else if(blockWhat.equals("Stop"))
-                        {
-                            SPenDetection.blockStop();
+                                break;
                         }
                     }
                 }
@@ -108,8 +107,6 @@ public class BootReceiver extends BroadcastReceiver {
 		{
 			if(pref.getBoolean("enabled", false))
 			{
-				//if(Shell.isSuAvailable())
-					//Shell.runCommand("setenforce 0");
 				ctx.startService(spen_det);
 			}
 		}
