@@ -59,12 +59,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
-import java.util.concurrent.RunnableFuture;
 
 public class MainActivity extends Activity {
     //int id = -1;
@@ -912,7 +909,7 @@ public class MainActivity extends Activity {
         mHelper = null;
     }
     public static void StopEventMonitor(Context ctx) {
-        ctx.stopService(new Intent(ctx,SPenDetection.class));
+        ctx.stopService(new Intent(ctx, SPenDetection.class));
     }
 
     private boolean legacyCheck(Context ctx)

@@ -36,7 +36,14 @@ public class BootReceiver extends BroadcastReceiver {
                 {
                     if(Shell.SU.available())
                     {
-                        ScreenshotActivity.takeScreenshot(ctx, true);
+                        Intent launch = new Intent(ctx, ScreenshotMiddleMan.class);
+                        launch.putExtra("external", true);
+
+                        launch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        launch.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        launch.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+                        launch.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                        ctx.startActivity(launch);
                     }
                 }
             }.start();

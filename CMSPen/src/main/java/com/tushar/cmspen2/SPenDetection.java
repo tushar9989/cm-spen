@@ -278,7 +278,13 @@ public class SPenDetection extends Service {
                                                     Toast.makeText(SPenDetection.this, "Button Long Press", Toast.LENGTH_SHORT).show();
                                                 new Thread() {
                                                     public void run() {
-                                                        ScreenshotActivity.takeScreenshot(SPenDetection.this, false);
+                                                        Intent launch = new Intent(SPenDetection.this, ScreenshotMiddleMan.class);
+
+                                                        launch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                                        launch.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                                        launch.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+                                                        launch.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                                                        SPenDetection.this.startActivity(launch);
                                                     }
                                                 }.start();
                                             }
@@ -484,15 +490,16 @@ public class SPenDetection extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d("CMSPen", "Service Destroyed");
         blockStop();
         if(screenLock.isHeld())
             screenLock.release();
         v.cancel();
+        Log.d("CMSPen", "Service Destroyed");
     }
 
     synchronized static void enableBlockCompat(Context ctx)
     {
+        pref = PreferenceManager.getDefaultSharedPreferences(ctx);
         if(pref.getString("touchs_path", "").equals("") || pref.getString("touchk_path", "").equals("")) {
             Events events = new Events();
             events.Init();

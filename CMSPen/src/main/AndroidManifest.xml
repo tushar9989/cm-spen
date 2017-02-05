@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tushar.cmspen2"
-    android:versionCode="45"
-    android:versionName="1.0.5" >
+    android:versionCode="47"
+    android:versionName="1.0.7" >
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -30,7 +30,7 @@
         <service
             android:name=".SPenDetection"
             android:enabled="true"
-            android:exported="true">
+            android:exported="true" >
         </service>
 
         <receiver
@@ -73,6 +73,11 @@
                 <action android:name="com.twofortyfouram.locale.intent.action.QUERY_CONDITION" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name=".ScreenshotMiddleMan"
+            android:theme="@style/Theme.Transparent">
+        </activity>
     </application>
 
 </manifest>
