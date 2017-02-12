@@ -548,7 +548,8 @@ public class MainActivity extends Activity {
                         "To fix this please go to the Developer Settings and make sure that Root Access is enabled.\n\n" +
                         "-SELinux is blocking access.\n" +
                         "To fix this you can install SuperSU.\n\n" +
-                        "-You have an incompatible device.");
+                        "-You have an incompatible device.\n\n" +
+                        "-You can try enabling the Mount namespace separation option in SuperSU.");
                 builderdonate.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         finish();
